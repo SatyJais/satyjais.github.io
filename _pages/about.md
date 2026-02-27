@@ -6,7 +6,7 @@ subtitle: Data Analyst & Analytics Engineer · BigQuery · dbt · Looker Studio
 
 profile:
   align: right
-  image: your-headshot.jpg
+  image: satyarth.jpeg
   image_circular: true
 
 news: false
