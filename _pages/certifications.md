@@ -6,7 +6,6 @@ nav: true
 nav_order: 4
 ---
 
-## Certifications
 
 <div class="certifications">
 
