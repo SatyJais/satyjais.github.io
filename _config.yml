@@ -10,8 +10,12 @@ description:    Data Analyst & Analytics Engineer
 url:            https://satyjais.github.io
 
 # Social links
-github_username: SatyJais
-linkedin_username: satyarthj
+social:
+  name: Satyarth Jaiswal
+  email: jaiswal.satyarth070@gmail.com
+  links:
+    - https://www.linkedin.com/in/satyarthj
+    - mailto:jaiswal.satyarth070@gmail.com
 
 # Blog - turn off if you don't want it
 blog_enabled: false
