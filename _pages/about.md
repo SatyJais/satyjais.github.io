@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: **Data Analyst & Analytics Engineer · BigQuery · dbt · Looker Studio · SQL · BI**
+subtitle: Data Analyst & Analytics Engineer · BigQuery · dbt · Looker Studio · SQL · BI
 
 
 profile:
