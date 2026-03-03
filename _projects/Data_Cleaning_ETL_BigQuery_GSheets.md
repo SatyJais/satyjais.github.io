@@ -32,7 +32,11 @@ In short, the data was not dynamically updated.
 
 <div class="row">
     <div class="col-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Descrepenacies_in_Data.png" title="Data descrepency" class="class="img-fluid mx-auto d-block" %}
+        {% include figure.liquid
+  path="assets/img/Descrepenacies_in_Data.png"
+  title="Data discrepancy"
+  class="img-fluid mx-auto d-block"
+  loading="eager" %}
     </div>
   
 </div>
