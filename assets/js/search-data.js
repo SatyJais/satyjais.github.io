@@ -71,9 +71,9 @@ ninja.data = [{
           description: "Campaign report - data streamlining &amp; automation project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DataCleaning_ETL/";
-            },},{id: "projects-bigquery-sql-amp-gsheets-data-ingestion-to-dashboard",
-          title: 'BigQuery (SQL) &amp;amp; GSheets-Data Ingestion to Dashboard',
-          description: "Campaign report - data streamlining &amp; automation project to improve accuracy and reduce time to make better decisions",
+            },},{id: "projects-bigquery-sql-amp-gsheets-data-ingestion-to-live-dashboard",
+          title: 'BigQuery (SQL) &amp;amp; GSheets — Data Ingestion to Live Dashboard',
+          description: "Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
             },},{id: "projects-ads-amp-crm-data-pipeline",
