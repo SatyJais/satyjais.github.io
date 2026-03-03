@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Data Analyst & Analytics Engineer · BigQuery · dbt · Looker Studio · SQL · BI
 
