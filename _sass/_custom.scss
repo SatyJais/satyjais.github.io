@@ -66,10 +66,12 @@
     align-items: flex-start;
   }
 }
-.section-load {
-  color: #245f66;   // keep your chosen color
-  font-weight: 700;   // bold
+.page__content h2.section-load {
+  color: #245f66 !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px;
 }
+
 .project-section {
-  margin-bottom: 80px;   // adjust spacing here
+  margin-bottom: 80px;
 }
