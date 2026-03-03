@@ -10,7 +10,7 @@ nav_order: 4
 <div class="certifications">
 
 <div class="cert-card">
-  <img src="/assets/img/cert-powerbi.png" alt="Power BI Certificate"/>
+  <img src="/assets/img/badge-powerbi.svg" alt="Power BI Certificate"/>
   <div class="cert-info">
     <h3>Microsoft Certified: Power BI Data Analyst Associate (PL-300)</h3>
     <p>Microsoft · Apr 2025</p>
