@@ -3,7 +3,7 @@ layout: page
 title: Data Cleaning & ETL Automation using BigQuery (SQL) & Google Sheets
 description: Campaign report - data streamlining & automation project
 img: assets/img/7.jpg
-redirect: https://unsplash.com
+redirect: 
 importance: 2
 category: work
 ---
