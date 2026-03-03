@@ -9,5 +9,5 @@ category: Work
 
 Designed and automated an ELT pipeline in BigQuery to unify 
 Google Ads, Meta Ads, and CRM lead data...
-
+img: assets/img/ELT_ads_data_pipeline_architecture.png
 
