@@ -3,7 +3,7 @@ layout: page
 title: BigQuery (SQL) & GSheets — Data Ingestion to Live Dashboard
 description: Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.
 img: assets/img/Project2_cover_image2.png
-importance: 2
+importance: 3
 category: Work
 ---
 
