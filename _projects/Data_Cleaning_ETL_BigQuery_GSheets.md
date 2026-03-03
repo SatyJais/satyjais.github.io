@@ -51,8 +51,11 @@ _# A system where each lead is stored in a unified sheet, all previous leads are
 
 ## Proposed data workflow (ETL process) - 
 
+<div class="project-section">
+  <h2 class="section-load">Load</h2>
+</div>
 
-<h2 class="section-load">EXTRACT</h2>
+
 
 ### Step 1 - Creating the mastersheet table
 ```sql
@@ -210,7 +213,9 @@ Lead_ID = left(N.Lead_ID,15)
 )
 ```
 
-<h2 class="section-load">Transform</h2>
+<div class="project-section">
+  <h2 class="section-load">Transform</h2>
+</div>
 
 ### Step 5 - Data Cleaning & Transformation
  - In some Client sheets Lead_Id (the primary key) is 18 chars long while other sheets have 15 Chars as the length - mapping the first 15 chars in all cases works
@@ -256,18 +261,22 @@ utm_campaign = ''
 </div>
 
 
-<h2 class="section-load">Load</h2>
+<div class="project-section">
+  <h2 class="section-load">Load</h2>
+</div>
 
 ### Bring transformed CRM data from the intermediary Google Sheet to combine with the Google Ads data.
 ```
 =importrange("1xad-3kfzmFDzjxLdkrFDIm-fE_kkDYn_2tVJCe6iQFY","Extract 1!A:Y")
 ```
-
+<div class="project-section">
+</div>
 ### Filtering data for leads from specific sources using GSHeet formulas
 ```
 Query(MasterData_CRM_Leads!$A:$AB,"select count(A) where J contains 'google' AND Not K contains 'organic' AND B >= date'"&TEXT(B3,"yyyy-mm-dd")&"' AND (S = 'Website' OR S contains 'google') AND B <= date'"&text(C3,"yyyy-mm-dd")&"' AND Not L contains 'bi_failover_sciera_23_q3_pmax' Label count(A) 'Formfills'",1)
 ```
-
+<div class="project-section">
+</div>
 
 ## Final result -  Bringing the data from both sources to create a real-time & dynamic dashboard
 
