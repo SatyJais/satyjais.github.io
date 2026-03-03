@@ -52,7 +52,8 @@ _# A system where each lead is stored in a unified sheet, all previous leads are
 ## Proposed data workflow (ETL process) - 
 
 <div class="project-section">
-  <h2 class="section-load">Load</h2>
+  <h2 class="section-load">Extract</h2>
+   <p>Extracting data from clients csv files</p>
 </div>
 
 
