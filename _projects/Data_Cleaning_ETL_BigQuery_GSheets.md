@@ -31,18 +31,15 @@ In short, the data was not dynamically updated.
   - ~25% error in the existing system.
 
 <div class="row">
-    <div class="col-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid
-  path="assets/img/Descrepenacies_in_Data.png"
-  title="Data discrepancy"
-  class="img-fluid mx-auto d-block"
-  loading="eager" %}
-    </div>
+   <div class="text-center">
+  {% include figure.liquid path="assets/img/Descrepenacies_in_Data.png" title="Data discrepancy" class="img-fluid d-inline-block" %}
+</div>
   
 </div>
 <div class="caption">
     Discrepancies in Data (what was reported vs actuals)-
 </div>
+
 
 
 
@@ -260,15 +257,16 @@ utm_campaign = ''
 </div>
 
 ## Load
+### Bring transformed CRM data from the intermediary Google Sheet to combine with the Google Ads data.
 ```
 =importrange("1xad-3kfzmFDzjxLdkrFDIm-fE_kkDYn_2tVJCe6iQFY","Extract 1!A:Y")
 ```
-
+### Filtering data for leads from specific sources using GSHeet formulas
 ```
 Query(MasterData_CRM_Leads!$A:$AB,"select count(A) where J contains 'google' AND Not K contains 'organic' AND B >= date'"&TEXT(B3,"yyyy-mm-dd")&"' AND (S = 'Website' OR S contains 'google') AND B <= date'"&text(C3,"yyyy-mm-dd")&"' AND Not L contains 'bi_failover_sciera_23_q3_pmax' Label count(A) 'Formfills'",1)
 ```
 
-## Final result =  Bringing the data from both sources to create a real-time & dynamic dashboard
+## Final result -  Bringing the data from both sources to create a real-time & dynamic dashboard
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
