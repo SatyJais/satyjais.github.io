@@ -9,10 +9,10 @@ category: Work
 
 # Overview
 
-## Business background
+### Business background
 I managed digital marketing for a major US telecom’s B2B division. Campaigns included Programmatic Display and Google Ads (Search, Display, Video). The core KPIs were **Cost per Lead**, **SQLs**, and **Cost per Opportunity**.
 
-## Problem
+### Problem
 The reporting workflow was fragile and manual:
 - Multiple data sources
 - New Excel/Google Sheet created for every report
@@ -25,7 +25,7 @@ Bottom line: there was no **single source of truth**, so performance was often *
 
 # What was broken
 
-## Key issues in the existing reporting system
+### Key issues in the existing reporting system
 - Leads were not reliably recorded using a stable primary key (Lead ID).
 - Historical leads were not updated. Example scenarios:
   - A lead disqualified later did not get reflected
@@ -66,14 +66,14 @@ To create an error-proof unified system, we built a continuously updated **livin
 
 ---
 
-# Proposed workflow (ETL)
+## Proposed workflow (ETL)
 
 <div class="project-section">
   <h2 class="section-load">Extract</h2>
   <p>Ingest CRM CSV files into BigQuery and maintain a master table that updates historical records.</p>
 </div>
 
-## Step 1 — Create the MasterSheet table
+### Step 1 — Create the MasterSheet table
 ```sql
 CREATE TABLE `.....Sheets.MasterSheet` (
   Lead_ID STRING,
@@ -104,7 +104,7 @@ CREATE TABLE `.....Sheets.MasterSheet` (
 );
 ``` 
 
-## Step 2 - Populating Master sheet (with the first sheet)
+### Step 2 - Populating Master sheet (with the first sheet)
 
 ```sql
 INSERT INTO
@@ -139,7 +139,7 @@ FROM
   `....Sheets.May_17_2023`
 ```
 
-## Step 3 - Updating Mastersheet with New CRM data sheet (recurring)
+### Step 3 - Updating Mastersheet with New CRM data sheet (recurring)
 
 ```sql
 UPDATE
@@ -160,7 +160,7 @@ FROM
 WHERE
 M.Lead_ID = left(N.Lead_ID,15)
 ```
-## Step 4 - Inserting (APPENDING) new rows from the new sheet into master sheet (recurring)
+### Step 4 - Inserting (APPENDING) new rows from the new sheet into master sheet (recurring)
 
 ```sql 
 INSERT INTO
@@ -231,10 +231,10 @@ Lead_ID = left(N.Lead_ID,15)
 
 <div class="project-section"> 
   <h2 class="section-load">Transform</h2> 
-  <p>Standardize IDs, enrich missing UTM fields, and remove inconsistencies to make the dataset reporting-ready.</p> 
+  <p> Standardise IDs, enrich missing UTM fields, and remove inconsistencies to make the dataset reporting-ready.</p> 
 </div>
 
-## Step 5 - Data Cleaning & Transformation
+### Step 5 - Data Cleaning & Transformation
  - In some Client sheets Lead_Id (the primary key) is 18 chars long while other sheets have 15 Chars as the length - mapping the first 15 chars in all cases works
  - Missing utm tag fields where Google tags are present.
 
