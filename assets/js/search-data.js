@@ -41,12 +41,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
+          section: "News",},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
@@ -66,6 +61,11 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-digital-advertising-data-pipeline-amp-dashboard",
+          title: 'Digital Advertising Data Pipeline &amp;amp; Dashboard',
+          description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/BQ_Looker_Dashboard/";
             },},{id: "projects-data-cleaning-amp-etl-automation-using-bigquery-sql-amp-google-sheets",
           title: 'Data Cleaning &amp;amp; ETL Automation using BigQuery (SQL) &amp;amp; Google Sheets',
           description: "Campaign report - data streamlining &amp; automation project",
