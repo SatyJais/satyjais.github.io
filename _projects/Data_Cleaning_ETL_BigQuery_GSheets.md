@@ -32,26 +32,16 @@ In short, the data was not dynamically updated.
 
 <div class="row">
     <div class="col-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Descrepenacies_in_Data.png" title="Data descrepency" class="img-fluid" %}
+        {% include figure.liquid loading="eager" path="assets/img/Descrepenacies_in_Data.png" title="Data descrepency" class="class="img-fluid mx-auto d-block" %}
     </div>
   
 </div>
 <div class="caption">
-    Example - Discrepancies in Data (what was reported vs actuals)-
+    Discrepancies in Data (what was reported vs actuals)-
 </div>
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+
 
 ## To fix these issues and create an error-proof unified system, automation was needed - A continuously updated & living "Source of Truth"
 _# A system where each lead is stored in a unified sheet, all previous leads are updated on the relevant attributes, and there is no data loss._
@@ -261,4 +251,29 @@ utm_campaign = ''
     {% include figure.liquid path="assets/img/Connnected_Gsheet.png" title="Connecting to GSHeets" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
+<div class="caption">
+    Connecting the CRM data to a dynamic Google Sheet for analysis & reporting
+</div>
 
+## Load
+```
+=importrange("1xad-3kfzmFDzjxLdkrFDIm-fE_kkDYn_2tVJCe6iQFY","Extract 1!A:Y")
+```
+
+```
+Query(MasterData_CRM_Leads!$A:$AB,"select count(A) where J contains 'google' AND Not K contains 'organic' AND B >= date'"&TEXT(B3,"yyyy-mm-dd")&"' AND (S = 'Website' OR S contains 'google') AND B <= date'"&text(C3,"yyyy-mm-dd")&"' AND Not L contains 'bi_failover_sciera_23_q3_pmax' Label count(A) 'Formfills'",1)
+```
+
+## Final result =  Bringing the data from both sources to create a real-time & dynamic dashboard
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/LiveCHart.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Live_Table.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Real-time Dashboard for centralised, error-free and live reporting to internal & external stakeholders
+</div>
