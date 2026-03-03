@@ -1,96 +1,110 @@
 ---
 layout: page
-title: BigQuery (SQL) & GSheets-Data Ingestion to Dashboard
-description: Campaign report - data streamlining & automation project to improve accuracy and reduce time to make better decisions
+title: BigQuery (SQL) & GSheets — Data Ingestion to Live Dashboard
+description: Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.
 img: assets/img/Project2_cover_image2.png
 importance: 2
 category: Work
 ---
 
-# Business Background -
-I was the account manager/ digital marketing consultant for a major telecom player in the US. The client commissioned us to run display (programmatic) and Google ads (search, display, video) for their B2B division. The key KPIs for the project were Cost per Lead, SQLs, and Cost per Opportunity.
+# Overview
 
-# Problem Statement - 
-The existing Client Campaign Data workflow was broken. It was prone to errors, missing data points, and too many manual steps, and it was time-consuming and inefficient. There were multiple data sources, and for every report, the team needed to fetch data from various sources and create a new Excel/Google Sheet each time, resulting in duplicate data, redundant efforts, and errors. Bottom line: **the process was missing the "Single Source of Truth"**. And when we missed data points, it affected our reported metrics, showing a performance lower than actual.
+## Business background
+I managed digital marketing for a major US telecom’s B2B division. Campaigns included Programmatic Display and Google Ads (Search, Display, Video). The core KPIs were **Cost per Lead**, **SQLs**, and **Cost per Opportunity**.
 
-# Issues in the existing data management & reporting system - 
-- The leads coming in from the client were not recorded as per their LeadID or any primary key
-- The older leads were not getting updated after a period. Let’s say if a lead from June is disqualified in August or converts into an opportunity later, it may not get updated in our systems. Or if an opportunity added more lines later, there was a high chance that we would miss that update, as a result, under-reporting our WINs.
-- Leads/opportunities from **Inbound calls, chatbot, Calendly** didn’t have campaign (UTM) tags every time they come into the sheets. The client has to add the tags manually in the sheets a few times a month, but the same leads may not have any tags in the subsequent sheets
-In short, the data was not dynamically updated.
+## Problem
+The reporting workflow was fragile and manual:
+- Multiple data sources
+- New Excel/Google Sheet created for every report
+- Duplicate data and inconsistent logic across versions
+- Missing updates to older leads and opportunities
 
+Bottom line: there was no **single source of truth**, so performance was often **under-reported**.
 
-# As a result, data discrepancies crept in. For example - 
+---
 
-- Missing Leads -
-  - Leads (all sources) in the CRM sheets (Jan- 17 Sep) - 3061
-  - Leads (all sources) in the most recent sheet (Jan- 17 Sep)  - 2978
-- Missed Opportunities -
-  - ~25% error in the existing system.
+# What was broken
 
-<div class="row">
-   <div class="text-center">
+## Key issues in the existing reporting system
+- Leads were not reliably recorded using a stable primary key (Lead ID).
+- Historical leads were not updated. Example scenarios:
+  - A lead disqualified later did not get reflected
+  - An opportunity added later was missed, leading to under-reported wins
+- Leads from **Inbound calls, Chatbot, Calendly** often lacked UTM tags.
+  - The client manually added tags occasionally, but future sheets frequently missed the same tags again.
+
+**Result:** data was not dynamically updated, and reporting drifted over time.
+
+---
+
+# Impact (Data discrepancies)
+
+### Example outcomes
+- **Missing leads**
+  - Leads in CRM sheets (Jan–17 Sep): **3061**
+  - Leads in the most recent sheet (Jan–17 Sep): **2978**
+- **Missed opportunities**
+  - ~**25%** error rate in the existing system
+
+<div class="text-center">
   {% include figure.liquid path="assets/img/Descrepenacies_in_Data.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
 </div>
-  
-</div>
 <div class="caption">
-    Discrepancies in Data (what was reported vs actuals)-
+  Discrepancies in data (reported vs actuals)
 </div>
 
+---
 
+# Solution approach
 
+To create an error-proof unified system, we built a continuously updated **living source of truth**.
 
+**Design goals**
+1. Automate workflows (remove manual rework)
+2. Maintain data integrity (primary keys + consistent updates)
+3. Always report using the latest, most complete data
 
-## To fix these issues and create an error-proof unified system, automation was needed - A continuously updated & living "Source of Truth"
-_# A system where each lead is stored in a unified sheet, all previous leads are updated on the relevant attributes, and there is no data loss._
+---
 
-1. **Automating workflows**
-2. **data integrity**
-3. **working with latest & most relevant data**
-
-## Proposed data workflow (ETL process) - 
+# Proposed workflow (ETL)
 
 <div class="project-section">
   <h2 class="section-load">Extract</h2>
-   <p>Extracting data from clients csv files</p>
+  <p>Ingest CRM CSV files into BigQuery and maintain a master table that updates historical records.</p>
 </div>
 
-
-
-### Step 1 - Creating the mastersheet table
+## Step 1 — Create the MasterSheet table
 ```sql
-Create Table
-  `.....Sheets.MasterSheet`
-(Lead_ID STRING,
-Created_Date DATE,
-Account_Engagement_Created_Date STRING,
-Entry_Status STRING,
-Lead_Status STRING,
-Company___Account STRING,
-City STRING,
-State_Province STRING,
-Zip_Postal_Code STRING,
-utm_source STRING,
-utm_medium STRING,
-utm_campaign STRING,
-Google_Analytics_Source STRING,
-Google_Analytics_Medium STRING,
-Google_Analytics_Campaign STRING,
-Google_Analytics_Content STRING,
-Google_Analytics_Term STRING,
-Disqualified_Reason STRING,
-Primary_Source STRING,
-Stage STRING,
-Total_Lines INTEGER,
-Handset_Qty INTEGER,
-IoT_Qty INTEGER,
-Connected_Device_Qty INTEGER,
-No__of_Employees INTEGER)
-```
-  
+CREATE TABLE `.....Sheets.MasterSheet` (
+  Lead_ID STRING,
+  Created_Date DATE,
+  Account_Engagement_Created_Date STRING,
+  Entry_Status STRING,
+  Lead_Status STRING,
+  Company___Account STRING,
+  City STRING,
+  State_Province STRING,
+  Zip_Postal_Code STRING,
+  utm_source STRING,
+  utm_medium STRING,
+  utm_campaign STRING,
+  Google_Analytics_Source STRING,
+  Google_Analytics_Medium STRING,
+  Google_Analytics_Campaign STRING,
+  Google_Analytics_Content STRING,
+  Google_Analytics_Term STRING,
+  Disqualified_Reason STRING,
+  Primary_Source STRING,
+  Stage STRING,
+  Total_Lines INTEGER,
+  Handset_Qty INTEGER,
+  IoT_Qty INTEGER,
+  Connected_Device_Qty INTEGER,
+  No__of_Employees INTEGER
+);
+``` 
 
-### Step 2 - Populating Master sheet (with the first sheet)
+## Step 2 - Populating Master sheet (with the first sheet)
 
 ```sql
 INSERT INTO
@@ -125,7 +139,7 @@ FROM
   `....Sheets.May_17_2023`
 ```
 
-### Step 3 - Updating Mastersheet with New CRM data sheet (recurring)
+## Step 3 - Updating Mastersheet with New CRM data sheet (recurring)
 
 ```sql
 UPDATE
@@ -146,7 +160,7 @@ FROM
 WHERE
 M.Lead_ID = left(N.Lead_ID,15)
 ```
-### Step 4 - Inserting (APPENDING) new rows from the new sheet into master sheet (recurring)
+## Step 4 - Inserting (APPENDING) new rows from the new sheet into master sheet (recurring)
 
 ```sql 
 INSERT INTO
@@ -214,11 +228,13 @@ Lead_ID = left(N.Lead_ID,15)
 )
 ```
 
-<div class="project-section">
-  <h2 class="section-load">Transform</h2>
+
+<div class="project-section"> 
+  <h2 class="section-load">Transform</h2> 
+  <p>Standardize IDs, enrich missing UTM fields, and remove inconsistencies to make the dataset reporting-ready.</p> 
 </div>
 
-### Step 5 - Data Cleaning & Transformation
+## Step 5 - Data Cleaning & Transformation
  - In some Client sheets Lead_Id (the primary key) is 18 chars long while other sheets have 15 Chars as the length - mapping the first 15 chars in all cases works
  - Missing utm tag fields where Google tags are present.
 
@@ -262,8 +278,9 @@ utm_campaign = ''
 </div>
 
 
-<div class="project-section">
-  <h2 class="section-load">Load</h2>
+<div class="project-section"> 
+  <h2 class="section-load">Load</h2> 
+  <p>Pull the transformed CRM master data into Google Sheets, bring Google Ads via Coefficient, and build a live dashboard.</p> 
 </div>
 
 ### Bring transformed CRM data from the intermediary Google Sheet to combine with the Google Ads data.
