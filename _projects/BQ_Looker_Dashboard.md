@@ -1,0 +1,368 @@
+---
+layout: page
+title: Digital Advertising Data Pipeline & Dashboard
+description: ETL pipeline and dashboarding for Google & Meta Ads using Google BigQuery(SQL) & Looker Studio
+img: assets/img/BQ_Looker_coverimage.png
+importance: 2
+category: Work
+---
+# Solution Architecture
+<div class="text-center">
+  {% include figure.liquid path="assets/img/BQ_Looker_coverimage.png" title="Data discrepancy" class="img-fluid d-inline-block" %}
+</div>
+<div class="caption">
+  Data Solution Pipeline Architecture
+</div>
+
+# Business Background
+As the Account/Data Manager for a digital advertising project with a senior living marketplace in the U.S., I was tasked with building a dashboard to monitor campaign performance — both for internal use and for client reporting.
+
+The client’s data team provided a Looker dashboard that tracked key post-lead metrics. Meanwhile, my team was responsible for guiding the client in setting up a Google Ads & Meta Ads dashboard focused on pre-lead performance indicators such as spend, CTR, CPC, and CPL. These metrics were to be broken down by device type, ad type, gender, and age group.
+The objective was not just to track pre-lead trends, but also to establish a clear connection between ad spend, individual keywords & clicks and lead generation & quality.
+
+# Challenge
+One of the major hurdles was integrating Google & Meta Ads data with the client's CRM data (lead records). The challenge stemmed from difficulties in locating the correct tables and metrics within the client’s existing data infrastructure, limiting our ability to create a seamless connection between marketing efforts and lead outcomes. Even when identified, the whole process was manual. 
+
+# Solution
+## Step 1 - Data Ingestion 
+## Google Ads data - 
+Bringing Google Ads data into the data warehouse - BigQuery.
+
+<div class="text-center">
+  {% include figure.liquid path="assets/img/Create_Google_Transfer.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
+</div>
+<div class="caption">
+  Google Ads Data Transfer
+</div>
+
+## Meta Ads data
+### Setting up data transfer was a little trickier. Here are the step-by-step instructions to connect FB ads to BigQuery
+**1️⃣ Create a Facebook App (Meta for Developers)**
+
+    Go to Meta for Developers
+     → My Apps → Create App.
+    Choose - Business type (needed for Ads API access).
+    Provide an App Name, Business Account, and contact email.
+
+**2️⃣ Add the Marketing API product**
+    In your App dashboard → Add Product → select **Marketing API.**
+    This enables ad account and campaign data access.
+
+**3️⃣ Get the required permissions**
+For BigQuery Data Transfer, check the below permissions:
+    ads_read (read campaign & ad performance data).
+    ads_management (needed even for some read operations & BQ integration).
+    business_management
+
+In App → App Review → Permissions and Features → Request these scopes.
+
+**4️⃣ Create a System User & Access Token (via Business Manager)**
+
+Go to Business Settings → System Users → Add new system user (Admin role).
+Assign ad accounts to this user.
+
+Generate a long-lived access token with ads_read + ads_management.
+
+**5️⃣ Set up BigQuery Data Transfer Service**
+
+**Keep token, App ID(client ID), and App secret handy**
+In Google Cloud → BigQuery → Data Transfers → Create Transfer.
+
+Choose Facebook Ads as the source.
+Authorize with the same (refresh) token that has the required permissions. 
+Add client ID & Client Secret from earlier.
+
+<div class="text-center">
+  {% include figure.liquid path="assets/img/Facebook_datatransfer.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
+</div>
+<div class="caption">
+  Facebook Ads Data Transfer
+</div>
+
+Select ad account(s) and schedule daily/hourly imports.
+  
+## Step 2 - Date Cleaning & Transformation
+Next I created the metadata required to combine metrics from different tables for an integrated view.
+
+### Step 2.1 - Creating Metadata for campaigns
+```sql
+SELECT
+  DISTINCT(campaign_id),
+  campaign_name,
+  campaign_advertising_channel_type,
+  campaign_advertising_channel_sub_type,
+  campaign_start_date,
+  campaign_serving_status,
+FROM
+  `aroscop-456222.********_Adwords.ads_Campaign_9925610920`
+WHERE
+  campaign_start_date >'2025-02-25'
+```
+
+
+### Step 2.2 - Getting metrics & dimensions for Campaigns
+```sql
+SELECT
+  segments_date,
+  Campaign.campaign_id,
+  Meta.campaign_name,
+  Meta.campaign_advertising_channel_type,
+  Campaign.metrics_impressions,
+  Campaign.metrics_clicks,
+  Campaign.metrics_conversions,
+  Campaign.segments_device,
+  round(Campaign.metrics_cost_micros/1000000,2) as cost
+FROM
+  `aroscop-456222.********_Adwords.ads_CampaignBasicStats_9925610920` AS Campaign
+LEFT JOIN
+  `Cleaned_Data_Metadata_********.Campaign_Meta` AS Meta
+USING
+  (campaign_id)
+ORDER BY
+segments_date
+```
+###  Step 2.3 - Clicks Ids & related metrics 
+```sql
+Select
+  click_view_gclid,
+  Clicks.campaign_id,
+  ad_group_id,
+  metrics_clicks,
+  click_view_page_number,
+  click_view_keyword,
+  click_view_keyword_info_match_type,
+  click_view_keyword_info_text,
+  click_view_location_of_presence_city,
+  click_view_location_of_presence_metro,
+  click_view_location_of_presence_most_specific,
+  customer_descriptive_name,
+  segments_click_type,
+  segments_device,
+  segments_date
+FROM
+  `********_Adwords.ads_ClickStats_9925610920` AS Clicks
+LEFT OUTER
+JOIN
+`Cleaned_Data_Metadata_********.Campaign_Meta`
+using(campaign_id)
+ORDER BY
+  segments_date
+```
+
+###  Step 2.4 - Keyword level information
+```sql
+SELECT
+  ad_group_id,
+  campaign_id,
+  Meta.campaign_name,
+  ad_group_criterion_criterion_id,
+  ad_group_criterion_keyword_match_type,
+  ad_group_criterion_keyword_text,
+  ad_group_criterion_negative,
+  ad_group_criterion_position_estimates_estimated_add_clicks_at_first_position_cpc,
+  ad_group_criterion_position_estimates_estimated_add_cost_at_first_position_cpc,
+  ad_group_criterion_position_estimates_first_page_cpc_micros,
+  ad_group_criterion_quality_info_post_click_quality_score
+FROM
+  `aroscop-456222.********_Adwords.p_ads_Keyword_9925610920` as Keywords
+LEFT JOIN
+  `Cleaned_Data_Metadata_********.Campaign_Meta` as Meta
+  Using (campaign_id)
+Where
+ Meta.campaign_start_date >='2025-02-25'
+```
+
+### Step 2.4 -  Search queries (accept those that have been acted upon (added to keywords or negatives)
+
+```sql
+SELECT
+  sqt.segments_date,
+  sqt.campaign_id,
+  cmp.campaign_name,
+  sqt.ad_group_id,
+  sqt.ad_group_ad_ad_id,
+  sqt.metrics_impressions,
+  sqt.metrics_clicks,
+  sqt.metrics_conversions,
+  sqt.metrics_all_conversions,
+  sqt.metrics_cost_micros/1000000 AS cost,
+  sqt.segments_device,
+  sqt.search_term_view_status,
+  sqt.search_term_view_search_term
+FROM
+  `********_Adwords.ads_SearchQueryStats_9925610920` AS sqt
+LEFT JOIN
+  `Cleaned_Data_Metadata_********.Campaign_Meta`AS cmp
+USING
+  (campaign_id)
+WHERE
+  cmp.campaign_start_date > '2025-02-25'
+  AND sqt.search_term_view_status = 'NONE'
+```
+## Step 3 - Pipeline Orchestration
+The final step for the data warehousing was to create auto **refreshes** and **appends** to the tables created earlier.
+
+### Appending campaign metadata (as new campaigns launch)
+``` sql
+INSERT INTO
+`Cleaned_Data_Metadata_********.Campaign_Meta`
+SELECT
+  campaign_id,
+  campaign_name,
+  campaign_advertising_channel_type,
+  campaign_advertising_channel_sub_type,
+  campaign_start_date,
+  campaign_serving_status,
+FROM
+  `********_Adwords.p_ads_Campaign_9925610920` AS Campaign
+WHERE
+  NOT EXISTS (
+  SELECT
+    campaign_id
+  FROM
+    `aroscop-456222.Cleaned_Data_Metadata_********.Campaign_Meta`
+  WHERE
+    campaign_id = Campaign.campaign_id )
+  AND Campaign.campaign_start_date >'2025-02-25'
+  AND Campaign.campaign_name <> **********************  (duplicate campaign name)
+```
+
+### Appending campaign metrics
+
+```sql
+Insert INTO
+`Cleaned_Data_Metadata_********.Campaign_Metrics`
+SELECT
+  segments_date,
+  Campaign.campaign_id,
+  Meta.campaign_name,
+  Meta.campaign_advertising_channel_type,
+  Campaign.metrics_impressions,
+  Campaign.metrics_clicks,
+  Campaign.metrics_conversions,
+  Campaign.segments_device,
+  round(Campaign.metrics_cost_micros/1000000,2) as cost
+FROM
+  `aroscop-456222.********_Adwords.ads_CampaignBasicStats_9925610920` AS Campaign
+LEFT JOIN
+  `Cleaned_Data_Metadata_********.Campaign_Meta` AS Meta
+USING
+  (campaign_id)
+Where Campaign.segments_date > (select max(segments_date) from `Cleaned_Data_Metadata_********.Campaign_Metrics`)
+ORDER BY
+segments_date
+```
+
+### Appending Clicks_Gclid metrics
+
+```sql
+INSERT INTO
+`Cleaned_Data_Metadata_********.Clicks_Gclids`
+Select
+  click_view_gclid,
+  Clicks.campaign_id,
+  ad_group_id,
+  metrics_clicks,
+  click_view_page_number,
+  click_view_keyword,
+  click_view_keyword_info_match_type,
+  click_view_keyword_info_text,
+  click_view_location_of_presence_city,
+  click_view_location_of_presence_metro,
+  click_view_location_of_presence_most_specific,
+  customer_descriptive_name,
+  segments_click_type,
+  segments_device,
+  segments_date
+FROM
+  `********_Adwords.ads_ClickStats_9925610920` AS Clicks
+LEFT OUTER
+JOIN
+`Cleaned_Data_Metadata_********.Campaign_Meta`
+using(campaign_id)
+Where Clicks.segments_date > (select max(segments_date) from `Cleaned_Data_Metadata_********.Clicks_Gclids`)
+AND
+not exists
+(select * from `Cleaned_Data_Metadata_********.Clicks_Gclids` as Old
+WHERE
+  Old.click_view_gclid = Clicks.click_view_gclid
+)
+ORDER BY
+  Clicks.segments_date
+```
+
+### Append Search Queries data
+
+```sql
+INSERT INTO
+`Cleaned_Data_Metadata_********.Search_Queries`
+SELECT
+  sqt.segments_date,
+  sqt.campaign_id,
+  cmp.campaign_name,
+  sqt.ad_group_id,
+  sqt.ad_group_ad_ad_id,
+  sqt.metrics_impressions,
+  sqt.metrics_clicks,
+  sqt.metrics_conversions,
+  sqt.metrics_all_conversions,
+  sqt.metrics_cost_micros/1000000 AS cost,
+  sqt.segments_device,
+  sqt.search_term_view_status,
+  sqt.search_term_view_search_term
+FROM
+  `********_Adwords.ads_SearchQueryStats_9925610920` AS sqt
+LEFT JOIN
+  `Cleaned_Data_Metadata_********.Campaign_Meta`AS cmp
+USING
+  (campaign_id)
+WHERE
+  cmp.campaign_start_date > '2025-02-25'
+  AND sqt.search_term_view_status = 'NONE'
+  AND sqt.segments_date > (select max(segments_date) from `Cleaned_Data_Metadata_********.Search_Queries`)
+```
+
+### Scheduling the Queries to run each day
+
+
+<div class="text-center">
+  {% include figure.liquid path="assets/img/Scheduled_Queries.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
+</div>
+<div class="caption">
+  Scheduled SQL Queries
+</div>
+
+## Step 4 - Bringing the cleaned and transformed data to Looker Studio.
+
+
+
+<div class="text-center">
+  {% include figure.liquid path="assets/img/ConnectingtoLooker.png.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
+</div>
+<div class="caption">
+  Bringing Data to Looker Studio
+</div>
+
+## Step 5 - Creating the dashboard and exposing GCLIDs (Google Click Ids) for the client to connect to their leads information (CRM)
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Campaign_performance.png" title="Campaign_performance" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Device-Adtype.png" title="Device-Adtype" class="img-fluid rounded z-depth-1" %}
+    </div>
+     <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/GClid.png" title="Google Clickid" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+## Step 6 - Joining tables - CRM & Google Ads, to map each lead to campaign, keywords, and locations.
+To understand the impact of keywords, campaigns, devices, and locations on lead quality and identify any trends.
+
+<div class="text-center">
+  {% include figure.liquid path="assets/img/Joins.png" title="Table joins in Looker" class="img-fluid d-inline-block w-25" %}
+</div>
+<div class="caption">
+  Scheduled SQL Queries
+</div>
+
