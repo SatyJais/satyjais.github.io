@@ -75,7 +75,7 @@ ninja.data = [{
           title: 'Data Cleaning &amp;amp; ETL Automation using BigQuery (SQL) &amp;amp; Google Sheets',
           description: "Campaign report - data streamlining &amp; automation project",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/DataCleaning&ETL/";
+              window.location.href = "/projects/DataCleaning_ETL/";
             },},{id: "projects-ads-amp-crm-data-pipeline",
           title: 'Ads &amp;amp; CRM Data Pipeline',
           description: "ELT pipeline unifying Google Ads, Meta Ads &amp; CRM data in BigQuery with dbt transforms and Looker Studio dashboards",
