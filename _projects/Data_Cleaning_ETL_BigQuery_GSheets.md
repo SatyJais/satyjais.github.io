@@ -13,6 +13,7 @@ category: Work
 <div class="caption">
   Data Solution Pipeline Architecture
 </div>
+
 # Overview
 
 ### Business background
