@@ -71,8 +71,8 @@ ninja.data = [{
           description: "Campaign report - data streamlining &amp; automation project",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DataCleaning_ETL/";
-            },},{id: "projects-data-cleaning-etl-automation-and-dashboarding-using-bigquery-sql-amp-google-sheets",
-          title: 'Data Cleaning, ETL Automation, and Dashboarding using BigQuery (SQL) &amp;amp; Google Sheets',
+            },},{id: "projects-bigquery-sql-amp-gsheets-data-ingestion-to-dashboard",
+          title: 'BigQuery (SQL) &amp;amp; GSheets-Data Ingestion to Dashboard',
           description: "Campaign report - data streamlining &amp; automation project to improve accuracy and reduce time to make better decisions",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
