@@ -32,7 +32,7 @@ In short, the data was not dynamically updated.
 
 <div class="row">
    <div class="text-center">
-  {% include figure.liquid path="assets/img/Descrepenacies_in_Data.png" title="Data discrepancy" class="img-fluid d-inline-block" %}
+  {% include figure.liquid path="assets/img/Descrepenacies_in_Data.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
 </div>
   
 </div>
