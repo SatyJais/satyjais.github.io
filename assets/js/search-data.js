@@ -10,8 +10,8 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
+          title: "Projects",
+          description: "Automating Intelligence Across Marketing &amp; Product",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
