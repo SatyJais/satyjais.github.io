@@ -14,7 +14,6 @@ category: Work
   Data Solution Pipeline Architecture
 </div>
 
-# Overview
 
 ### Business background
 I managed digital marketing for a major US telecom’s B2B division. Campaigns included Programmatic Display and Google Ads (Search, Display, Video). The core KPIs were **Cost per Lead**, **SQLs**, and **Cost per Opportunity**.
