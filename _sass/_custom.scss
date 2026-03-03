@@ -66,18 +66,15 @@
     align-items: flex-start;
   }
 }
-/* Project section styling */
-.page__content h2.section-load {
-  color: #245f66 !important;
-  font-weight: 800 !important;
+/* ETL section headings */
+h2.section-load {
+  color: #245f66;
+  font-weight: 800;
   margin-top: 2.2rem;
   margin-bottom: 1rem;
 }
 
+/* Spacing between ETL blocks */
 .project-section {
-  margin-bottom: 80px;
-}
-
-html {
-  filter: hue-rotate(120deg) !important;
+  margin: 64px 0;
 }
