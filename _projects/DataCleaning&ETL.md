@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: Data Cleaning & ETL Automation using BigQuery (SQL) & Google Sheets
+description: Campaign report - data streamlining & automation project
 img: assets/img/7.jpg
 redirect: https://unsplash.com
-importance: 3
+importance: 2
 category: work
 ---
 
