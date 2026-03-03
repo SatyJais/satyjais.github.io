@@ -6,7 +6,13 @@ img: assets/img/Project2_cover_image2.png
 importance: 3
 category: Work
 ---
-
+# Solution Architecture
+<div class="text-center">
+  {% include figure.liquid path="assets/img/Project2_cover_image2.png" title="Data discrepancy" class="img-fluid d-inline-block" %}
+</div>
+<div class="caption">
+  Data Solution Pipeline Architecture
+</div>
 # Overview
 
 ### Business background
