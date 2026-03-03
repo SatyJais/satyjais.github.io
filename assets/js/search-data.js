@@ -41,12 +41,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
+          section: "News",},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
           section: "Projects",handler: () => {
@@ -76,6 +71,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-data-cleaning-amp-etl-automation-using-bigquery-sql-amp-google-sheets",
+          title: 'Data Cleaning &amp;amp; ETL Automation using BigQuery (SQL) &amp;amp; Google Sheets',
+          description: "Campaign report - data streamlining &amp; automation project",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/DataCleaning&ETL/";
             },},{id: "projects-ads-amp-crm-data-pipeline",
           title: 'Ads &amp;amp; CRM Data Pipeline',
           description: "ELT pipeline unifying Google Ads, Meta Ads &amp; CRM data in BigQuery with dbt transforms and Looker Studio dashboards",
