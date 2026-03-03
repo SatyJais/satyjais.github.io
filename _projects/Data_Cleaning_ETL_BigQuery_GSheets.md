@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Data Cleaning, ETL Automation, and Dashboarding using BigQuery (SQL) & Google Sheets
+title: BigQuery (SQL) & GSheets-Data Ingestion to Dashboard
 description: Campaign report - data streamlining & automation project to improve accuracy and reduce time to make better decisions
 img: assets/img/Project2_cover_image2.png
 importance: 2
@@ -25,15 +25,14 @@ In short, the data was not dynamically updated.
 # As a result, data discrepancies crept in. For example - 
 
 - Missing Leads -
-  - Leads (all sources) in the CRM sheets (Jan- 17 Sep 2023) - 3061
-  - Leads (all sources) in the most recent sheet (Jan- 17 Sep 2023)  - 2978
+  - Leads (all sources) in the CRM sheets (Jan- 17 Sep) - 3061
+  - Leads (all sources) in the most recent sheet (Jan- 17 Sep)  - 2978
 - Missed Opportunities -
   - ~25% error in the existing system.
 
-<img src="assets/img/Descrepenacies_in_Data.png" alt="Descrepancies in Data" style="width:30%; height:auto;">
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Descrepenacies_in_Data.png" title="Data descrepency" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-3 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Descrepenacies_in_Data.png" title="Data descrepency" class="img-fluid" %}
     </div>
   
 </div>
@@ -253,17 +252,13 @@ AND
 utm_campaign = ''
 ```
 
-{% raw %}
 
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/Connecting_to_GSheet_2.png" title="Connecting to GSHeets" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/Connnected_Gsheet.png" title="Connecting to GSHeets" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
