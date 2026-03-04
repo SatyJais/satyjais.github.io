@@ -20,144 +20,77 @@ cv:
 
   sections:
 
-    Experience:
+  Experience:
+    - company: Sciera Inc.
+      position: Senior Consultant – Marketing Science
+      location: Remote
+      start_date: 2022
+      end_date: Present
+      highlights:
+        - Designed scalable marketing dashboards for major US clients.
+        - Built automated ETL pipelines integrating CRM and advertising data.
+        - Led a team of five delivering campaign analytics and performance insights.
 
-      - company: Sciera Inc.
-        position: Senior Consultant – Marketing Science
-        location: United States / Remote
-        start_date: 2022
-        end_date: Present
-        highlights:
-          - Designed scalable marketing dashboards for major US clients.
-          - Built automated ETL pipelines integrating CRM and advertising data.
-          - Led a team of five delivering campaign analytics and performance insights.
-          - Conducted brand lift studies and impact measurement frameworks.
-          - Applied A/B testing and statistical analysis to optimise campaign KPIs.
-
-      - company: Aroscop Tech Inc.
-        position: Manager – Marketing & Marketing Analytics
-        location: India
-        start_date: 2020
-        end_date: 2022
-        highlights:
-          - Implemented marketing automation and CRM workflows that doubled monthly deal closures.
-          - Built and managed a team of marketing, analytics, and design professionals.
-          - Delivered market research reports and industry trend analyses.
-          - Planned and executed online conferences that helped win major enterprise clients.
-
-      - company: RazorThink
-        position: Digital Marketing Manager
-        location: India
-        start_date: 2018
-        end_date: 2020
-        highlights:
-          - Developed marketing strategies for AI products and enterprise analytics solutions.
-          - Executed targeted LinkedIn campaigns for B2B lead generation.
-          - Promoted employee-generated content across YouTube and Medium.
-
-      - company: MSupply Ecommerce India Pvt Ltd
-        position: Digital Marketing Analyst
-        location: India
-        start_date: 2015
-        end_date: 2018
-        highlights:
-          - Analysed paid and organic campaigns to guide marketing decisions.
-          - Collaborated with category teams to optimise product promotions.
-          - Managed blog and content marketing initiatives to increase engagement.
-
-      - company: FCB Malaysia
-        position: Research Analyst & Associate Consultant
-        location: Malaysia
-        start_date: 2013
-        end_date: 2014
-        highlights:
-          - Delivered campaign analytics and performance reports for telecom clients.
-          - Conducted social listening and audience sentiment analysis.
-sections:
   Key Achievements:
     - name: Reduced Customer Acquisition Cost
       highlights:
-        - Reduced customer acquisition cost by 70% within one year through data-driven campaign optimisation.
-  
+        - Reduced CAC by 70% through data-driven campaign optimisation.
+
     - name: Dashboard Automation
       highlights:
-        - Saved 40+ man-hours per month by automating marketing dashboards and eliminating manual reporting.
-  
+        - Saved 40+ man-hours per month by automating marketing dashboards.
+
     - name: Sales Cycle Efficiency
       highlights:
         - Streamlined CRM workflows and doubled monthly deal closures.
-  
+
     - name: Subscriber Growth
       highlights:
-        - Scaled subscriber base to 10K+ decision-makers through strategic content initiatives.
+        - Scaled subscriber base to 10K+ decision makers.
 
-    Projects:
+  Projects:
+    - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
+      highlights:
+        - Built an ELT pipeline integrating Google Ads, Meta Ads and CRM data.
+        - Automated transformations using dbt and created real-time dashboards.
 
-      - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
-        url: https://satyjais.github.io/projects/digital_Ads_performance_Dashboard/
-        highlights:
-          - Built an end-to-end ELT pipeline integrating Google Ads, Meta Ads, and CRM data.
-          - Automated transformations using dbt and created real-time dashboards in Looker Studio.
+    - name: CRM & Digital Ads Data Integration
+      highlights:
+        - Unified CRM and advertising datasets using SQL and BigQuery.
 
-      - name: CRM & Digital Ads Data Integration
-        url: https://satyjais.github.io/projects/BQ_Looker_Dashboard/
-        highlights:
-          - Unified CRM and advertising datasets using SQL and BigQuery.
-          - Enabled deeper analysis of lead quality, campaigns, and keywords.
-
-      - name: ETL Pipeline for Advertising Performance Reporting
-        url: https://satyjais.github.io/projects/Data_Cleaning_ETL_BigQuery_GSheets/
-        highlights:
-          - Automated campaign reporting workflows and built real-time dashboards.
-
-    Skills:
-
-      - name: Data Engineering & Analytics
-        icon: fa-solid fa-database
-        keywords:
-          - SQL
-          - Python
-          - BigQuery
-          - dbt
-          - ETL pipelines
-
-      - name: Business Intelligence
-        icon: fa-solid fa-chart-line
-        keywords:
-          - Power BI
-          - Tableau
-          - Looker
-          - Looker Studio
-
-      - name: Data Analysis
-        icon: fa-solid fa-chart-bar
-        keywords:
-          - Excel
-          - Google Sheets
-          - GA4
-          - SEMRush
-          - DAX
-          - Power Query
-
-sections:
-  Certifications:
+  Certificates:
     - name: Agentic AI and AI Agents for Leaders
       date: 2025
+      issuer: Coursera
+
     - name: Python for Data Science and AI
       date: 2025
+      issuer: IBM
+
     - name: Microsoft Certified: Power BI Data Analyst Associate (PL-300)
       date: 2025
+      issuer: Microsoft
+
     - name: Microsoft Power BI Data Analyst Specialisation
       date: 2024
+      issuer: Coursera
+
     - name: Google Cloud Data Analytics Professional Certificate
       date: 2025
+      issuer: Google
+
     - name: Google Business Intelligence Certificate
       date: 2024
+      issuer: Google
+
     - name: Google Advanced Data Analytics Certificate
       date: 2025
+      issuer: Google
+
     - name: Google Data Analytics Professional Certificate
       date: 2024
-
+      issuer: Google
+      
     Education:
 
       - institution: Indian Institute of Management
