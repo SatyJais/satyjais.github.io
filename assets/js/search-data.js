@@ -56,11 +56,6 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-keyword-driven-influencer-discovery-python",
-          title: 'Keyword-driven influencer discovery (Python)',
-          description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
             },},{id: "projects-digital-advertising-data-pipeline-amp-dashboard",
           title: 'Digital Advertising Data Pipeline &amp;amp; Dashboard',
           description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
@@ -76,6 +71,11 @@ ninja.data = [{
           description: "Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
+            },},{id: "projects-keyword-driven-influencer-discovery-python",
+          title: 'Keyword-driven influencer discovery (Python)',
+          description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Keyword_driven_influencer_discovery/";
             },},{id: "projects-ads-amp-crm-data-pipeline",
           title: 'Ads &amp;amp; CRM Data Pipeline',
           description: "ELT pipeline unifying Google Ads, Meta Ads &amp; CRM data in BigQuery with dbt transforms and Looker Studio dashboards",
