@@ -73,7 +73,7 @@ cv:
         highlights:
           - Delivered campaign analytics and performance reports for telecom clients.
           - Conducted social listening and audience sentiment analysis.
-
+sections:
   Key Achievements:
     - name: Reduced Customer Acquisition Cost
       highlights:
@@ -139,31 +139,24 @@ cv:
           - DAX
           - Power Query
 
-    Certifications:
-
-      - name: Agentic AI and AI Agents for Leaders
-        date: 2025
-
-      - name: Python for Data Science and AI
-        date: 2025
-
-      - name: Microsoft Certified – Power BI Data Analyst Associate (PL-300)
-        date: 2025
-
-      - name: Microsoft Power BI Data Analyst Specialisation
-        date: 2024
-
-      - name: Google Cloud Data Analytics Professional Certificate
-        date: 2025
-
-      - name: Google Business Intelligence Certificate
-        date: 2024
-
-      - name: Google Advanced Data Analytics Certificate
-        date: 2025
-
-      - name: Google Data Analytics Professional Certificate
-        date: 2024
+sections:
+  Certifications:
+    - name: Agentic AI and AI Agents for Leaders
+      date: 2025
+    - name: Python for Data Science and AI
+      date: 2025
+    - name: Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+      date: 2025
+    - name: Microsoft Power BI Data Analyst Specialisation
+      date: 2024
+    - name: Google Cloud Data Analytics Professional Certificate
+      date: 2025
+    - name: Google Business Intelligence Certificate
+      date: 2024
+    - name: Google Advanced Data Analytics Certificate
+      date: 2025
+    - name: Google Data Analytics Professional Certificate
+      date: 2024
 
     Education:
 
