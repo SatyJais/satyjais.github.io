@@ -76,34 +76,34 @@ cv:
 
     Key Achievements:
 
-      - title: Reduced Customer Acquisition Cost
+      - name: Reduced Customer Acquisition Cost
         summary: Reduced customer acquisition cost by 70% within one year through data-driven campaign optimisation.
 
-      - title: Dashboard Automation
+      - name: Dashboard Automation
         summary: Saved 40+ man-hours per month by automating marketing dashboards and eliminating manual reporting.
 
-      - title: Sales Cycle Efficiency
+      - name: Sales Cycle Efficiency
         summary: Streamlined CRM workflows and doubled monthly deal closures.
 
-      - title: Subscriber Growth
+      - name: Subscriber Growth
         summary: Scaled subscriber base to 10K+ decision-makers through strategic content initiatives.
 
     Projects:
 
       - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
-        url: https://satyjais.github.io/projects/BigQuery_dbt_pipeline
+        url: https://satyjais.github.io/projects/digital_Ads_performance_Dashboard/
         highlights:
           - Built an end-to-end ELT pipeline integrating Google Ads, Meta Ads, and CRM data.
           - Automated transformations using dbt and created real-time dashboards in Looker Studio.
 
       - name: CRM & Digital Ads Data Integration
-        url: https://satyjais.github.io/projects/CRM_ads_integration
+        url: https://satyjais.github.io/projects/BQ_Looker_Dashboard/
         highlights:
           - Unified CRM and advertising datasets using SQL and BigQuery.
           - Enabled deeper analysis of lead quality, campaigns, and keywords.
 
       - name: ETL Pipeline for Advertising Performance Reporting
-        url: https://satyjais.github.io/projects/ETL_ad_reporting
+        url: https://satyjais.github.io/projects/Data_Cleaning_ETL_BigQuery_GSheets/
         highlights:
           - Automated campaign reporting workflows and built real-time dashboards.
 
