@@ -8,7 +8,7 @@ category: Vibecoding
 giscus_comments: false
 ---
 
-# Final User Interface - https://youtubeinfluencers.streamlit.app/ 
+# Final User Interface - [View the Live App](https://youtubeinfluencers.streamlit.app/)
 <div class="text-center">
   {% include figure.liquid path="assets/img/YouTubeCreatorFinder.png" title="Influencer Discovery" class="img-fluid d-inline-block" %}
 </div>
