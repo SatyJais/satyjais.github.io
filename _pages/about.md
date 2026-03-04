@@ -21,10 +21,10 @@ decision-ready insights. My work bridges performance marketing and data
 infrastructure — transforming Google Ads, Meta, CRM, and geo data into structured 
 models using **BigQuery, dbt, SQL, and BI tools**.
 
-I design automated **ETL/ELT pipelines**, develop clean transformation layers, and build dashboards that translate KPIs into actionable strategy. My approach is systems-driven: define the right metrics, validate data integrity, model efficiently, segment meaningfully, and communicate insights that influence growth.
+I design automated **ETL/ELT pipelines**, develop clean transformation layers, create robust data models and build dashboards that translate KPIs into actionable strategies. My approach is systems-driven: define the right metrics, validate data integrity, model efficiently, build scalable systems,  segment meaningfully, and communicate insights that influence growth.
 
-I specialise in **Google Cloud (BigQuery), dbt transformations, 
-and Looker Studio dashboards** — with a strong focus on marketing 
+I specialise in **Google Cloud (BigQuery), dbt transformations, SQL, Data Modelling
+and Looker & Looker Studio dashboards** — with a strong focus on marketing 
 analytics and campaign attribution.
 
 I am particularly interested in roles where analytics directly impacts business performance, growth strategy, and operational efficiency.
