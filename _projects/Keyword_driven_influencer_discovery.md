@@ -2,7 +2,7 @@
 layout: page
 title: Keyword-driven influencer discovery (Python)
 description: keyword-driven influencer discovery application using Python & Streamlit
-img: assets/img/9.jpg
+img: assets/img/YouTubeCreatorFinder.png
 importance: 1
 category: Vibecoding
 giscus_comments: false
