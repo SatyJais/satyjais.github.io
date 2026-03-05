@@ -345,7 +345,7 @@ WHERE
 
 ## Step 5 - Creating the dashboard and exposing GCLIDs (Google Click Ids) for the client to connect to their leads information (CRM)
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/Campaign_performance.png" title="Campaign_performance" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
