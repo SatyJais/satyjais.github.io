@@ -39,4 +39,45 @@
 @use "font-awesome/solid";
 @use "font-awesome/regular";
 
+// Project card image consistency
+.projects .card img {
+  height: 180px !important;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
 
+// Equal card heights in a row
+.projects .row > div {
+  display: flex;
+}
+
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// Consistent project card title size
+.projects .card-title {
+  font-size: 1.05rem !important;
+  line-height: 1.4;
+  min-height: 3em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Consistent description size
+.projects .card-text {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.5;
+}
