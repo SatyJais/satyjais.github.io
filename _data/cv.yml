@@ -94,15 +94,29 @@ cv:
         highlights:
           - Unified CRM data with Google and Meta Ads data using multidimensional data modelling.
           - Revealed in-depth insights on lead quality, keywords, locations, and campaigns.
-    Skills:
-      - label: BI Platforms
-        details: Power BI, Tableau, Looker Studio, Looker
-      - label: Data Analysis
-        details: SQL, Python, R, Excel, Google Sheets, Jupyter Notebook, GA4, DAX, Power Query
-      - label: Cloud Platform
-        details: BigQuery (GCP)
-      - label: Data Transformation
-        details: dbt
+     Skills:
+      - name: Data Engineering
+        keywords:
+          - SQL
+          - Python
+          - BigQuery
+          - dbt
+          - ETL Pipelines
+
+      - name: Business Intelligence
+        keywords:
+          - Power BI
+          - Tableau
+          - Looker Studio
+          - Data Visualization
+
+      - name: Marketing Analytics
+        keywords:
+          - Google Ads
+          - Meta Ads
+          - GA4
+          - Campaign Attribution
+          - A/B Testing
     Certificates:
       - name: Agentic AI and AI Agents for Leaders
         date: 2025-09
