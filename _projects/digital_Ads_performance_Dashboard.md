@@ -47,7 +47,7 @@ Raw tables were transformed using **dbt**, with a structured DAG covering stagin
 
 The dbt transformation layer handled deduplication, schema normalisation, CRM-to-ads joining, and KPI aggregation. Key models included:
 
-**Staging models:**
+**Staging models: Bronze (Raw / Source-aligned)**
 - `Google_Ads_Campaign_Data` — cleaned campaign metrics from raw Adwords tables
 - `Google_Ads_Metadata` — campaign metadata and structure
 - `stg_Facebook_Ads` — normalised Meta Ads data
@@ -56,14 +56,14 @@ The dbt transformation layer handled deduplication, schema normalisation, CRM-to
 - `DOs` — downstream opportunity records
 - `UTM_Tags` — parsed UTM parameters for attribution
 
-**Intermediate models:**
+**Intermediate models: Silver (Staging / Standardised)**
 - `AT_Ads_Mapped` — ads mapped to active tours
 - `Discussing_Options_Ads_Mapped` — ads linked to discussion-stage leads
 - `Leads_Ads_Mapped` — full CRM-to-ad join
 - `Meta_Ads_Metrics_incomplete` → `Meta_Ads_Metrics_Summary`
 - `Adwords_Geo_Analysis` — geo-level performance
 
-**Mart models (dashboard-ready):**
+**Mart models: (dashboard-ready / Business-ready)**
 - `Google_Ads_Metrics` — aggregated Google performance
 - `combined_metrics` — cross-platform unified view
 - `Device_Type_Summary` — performance by device
@@ -278,7 +278,7 @@ select * from geo_mapped
 
 Built a real-time Looker Studio dashboard connected directly to BigQuery mart tables, shared with the internal team, client marketing, and client leadership.
 
-<div class="row justify-content-sm-center">
+<div class="row">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/Seniorly_Dashboard1.png" title="Overview — Total Leads, DOs, Active Tours, Wins, CPL and spend trends across Google & Meta" class="img-fluid rounded z-depth-1" %}
     </div>
