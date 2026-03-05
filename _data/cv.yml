@@ -60,7 +60,7 @@ cv:
       - name: Python for Data Science and AI
         date: 2025
         issuer: IBM
-      - name: Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+      - name: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
         date: 2025
         issuer: Microsoft
       - name: Microsoft Power BI Data Analyst Specialisation
@@ -81,6 +81,6 @@ cv:
 
     Education:
       - institution: Indian Institute of Management
-        area: MBA – Marketing & Analytics
+        area: "MBA – Marketing & Analytics"
       - institution: The LNM Institute of Information Technology
-        area: B.Tech – Communication & Computer Engineering
+        area: "B.Tech – Communication & Computer Engineering"
