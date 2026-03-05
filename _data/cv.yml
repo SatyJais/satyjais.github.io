@@ -19,16 +19,27 @@ cv:
       username: https://satyjais.github.io
 
   sections:
-    Experience:
+     Experience:
       - company: Sciera Inc.
         position: Senior Consultant – Marketing Science
         location: Remote
         start_date: 2022
         end_date: Present
         highlights:
-          - Designed scalable marketing dashboards for major US clients.
-          - Built automated ETL pipelines integrating CRM and advertising data.
-          - Led a team of five delivering campaign analytics and performance insights.
+          - Built automated marketing dashboards used by enterprise telecom clients.
+          - Designed ETL pipelines integrating CRM and advertising platforms.
+          - Reduced reporting time by automating data ingestion and transformations.
+          - Led analytics initiatives across Google Ads, Meta Ads, and CRM datasets.
+
+      - company: Aroscop Tech Inc.
+        position: Manager – Marketing Analytics
+        location: India
+        start_date: 2020
+        end_date: 2022
+        highlights:
+          - Implemented CRM automation improving sales conversion tracking.
+          - Built analytics frameworks for campaign performance analysis.
+          - Managed a cross-functional marketing and analytics team.
 
     Key Achievements:
       - name: Reduced Customer Acquisition Cost
