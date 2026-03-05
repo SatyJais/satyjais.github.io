@@ -337,7 +337,7 @@ WHERE
 ### Step 4 — Connecting to Looker Studio
 
 <div class="text-center mb-2">
-  {% include figure.liquid path="assets/img/ConnectingtoLookerpng" title="Bringing Data to Looker Studio" class="img-fluid rounded z-depth-1 w-50" %}
+  {% include figure.liquid path="assets/img/ConnectingtoLooker.png" title="Bringing Data to Looker Studio" class="img-fluid rounded z-depth-1 w-50" %}
 </div>
 <div class="caption">Bringing cleaned BigQuery tables into Looker Studio</div>
 
@@ -366,7 +366,7 @@ Built a live Looker Studio dashboard and exposed Google Click IDs (GCLIDs) so th
 Joined CRM lead records to Google Ads click data via GCLID to map each lead back to the campaign, keyword, device, and location that drove it — enabling insight into lead quality, not just lead volume.
 
 <div class="text-center mb-2">
-  {% include figure.liquid path="assets/img/Joins.png" title="Table joins in Looker" class="img-fluid rounded z-depth-1 w-50" %}
+  {% include figure.liquid path="assets/img/Joins_in_Looker.png" title="Table joins in Looker" class="img-fluid rounded z-depth-1 w-50" %}
 </div>
 <div class="caption">Table joins in Looker Studio — CRM × Google Ads</div>
 
