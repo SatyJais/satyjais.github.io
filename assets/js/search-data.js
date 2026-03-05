@@ -66,8 +66,8 @@ ninja.data = [{
           description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Keyword_driven_influencer_discovery/";
-            },},{id: "projects-ocr-amp-ai-powered-care-note-processing-pipeline",
-          title: 'OCR &amp;amp; AI-Powered Care Note Processing Pipeline',
+            },},{id: "projects-ocr-amp-ai-powered-note-processing-pipeline",
+          title: 'OCR &amp;amp; AI-Powered Note Processing Pipeline',
           description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO",
           section: "Projects",handler: () => {
               window.location.href = "/projects/PdfProcessingPipeline/";
