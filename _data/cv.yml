@@ -76,7 +76,7 @@ cv:
         highlights:
           - Unified CRM data with Google and Meta Ads data using multidimensional data modelling.
           - Revealed in-depth insights on lead quality, keywords, locations, and campaigns.
-     Skills:
+    Skills:
       - name: Data Engineering
         keywords:
           - SQL
