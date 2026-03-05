@@ -4,7 +4,7 @@ title: "Marketing Analytics Pipeline & Live Dashboard"
 description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads & CRM data via BigQuery, dbt & Looker Studio"
 img: assets/img/ELT_ads_data_pipeline_architecture.png
 importance: 1
-category: Data Engineering
+category: Work
 ---
 
 ## Overview
