@@ -19,82 +19,68 @@ cv:
       username: https://satyjais.github.io
 
   sections:
+    Experience:
+      - company: Sciera Inc.
+        position: Senior Consultant – Marketing Science
+        location: Remote
+        start_date: 2022
+        end_date: Present
+        highlights:
+          - Designed scalable marketing dashboards for major US clients.
+          - Built automated ETL pipelines integrating CRM and advertising data.
+          - Led a team of five delivering campaign analytics and performance insights.
 
-  Experience:
-    - company: Sciera Inc.
-      position: Senior Consultant – Marketing Science
-      location: Remote
-      start_date: 2022
-      end_date: Present
-      highlights:
-        - Designed scalable marketing dashboards for major US clients.
-        - Built automated ETL pipelines integrating CRM and advertising data.
-        - Led a team of five delivering campaign analytics and performance insights.
+    Key Achievements:
+      - name: Reduced Customer Acquisition Cost
+        highlights:
+          - Reduced CAC by 70% through data-driven campaign optimisation.
+      - name: Dashboard Automation
+        highlights:
+          - Saved 40+ man-hours per month by automating marketing dashboards.
+      - name: Sales Cycle Efficiency
+        highlights:
+          - Streamlined CRM workflows and doubled monthly deal closures.
+      - name: Subscriber Growth
+        highlights:
+          - Scaled subscriber base to 10K+ decision makers.
 
-  Key Achievements:
-    - name: Reduced Customer Acquisition Cost
-      highlights:
-        - Reduced CAC by 70% through data-driven campaign optimisation.
+    Projects:
+      - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
+        highlights:
+          - Built an ELT pipeline integrating Google Ads, Meta Ads and CRM data.
+          - Automated transformations using dbt and created real-time dashboards.
+      - name: CRM & Digital Ads Data Integration
+        highlights:
+          - Unified CRM and advertising datasets using SQL and BigQuery.
 
-    - name: Dashboard Automation
-      highlights:
-        - Saved 40+ man-hours per month by automating marketing dashboards.
+    Certificates:
+      - name: Agentic AI and AI Agents for Leaders
+        date: 2025
+        issuer: Coursera
+      - name: Python for Data Science and AI
+        date: 2025
+        issuer: IBM
+      - name: Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+        date: 2025
+        issuer: Microsoft
+      - name: Microsoft Power BI Data Analyst Specialisation
+        date: 2024
+        issuer: Coursera
+      - name: Google Cloud Data Analytics Professional Certificate
+        date: 2025
+        issuer: Google
+      - name: Google Business Intelligence Certificate
+        date: 2024
+        issuer: Google
+      - name: Google Advanced Data Analytics Certificate
+        date: 2025
+        issuer: Google
+      - name: Google Data Analytics Professional Certificate
+        date: 2024
+        issuer: Google
 
-    - name: Sales Cycle Efficiency
-      highlights:
-        - Streamlined CRM workflows and doubled monthly deal closures.
-
-    - name: Subscriber Growth
-      highlights:
-        - Scaled subscriber base to 10K+ decision makers.
-
-  Projects:
-    - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
-      highlights:
-        - Built an ELT pipeline integrating Google Ads, Meta Ads and CRM data.
-        - Automated transformations using dbt and created real-time dashboards.
-
-    - name: CRM & Digital Ads Data Integration
-      highlights:
-        - Unified CRM and advertising datasets using SQL and BigQuery.
-
-  Certificates:
-    - name: Agentic AI and AI Agents for Leaders
-      date: 2025
-      issuer: Coursera
-
-    - name: Python for Data Science and AI
-      date: 2025
-      issuer: IBM
-
-    - name: Microsoft Certified: Power BI Data Analyst Associate (PL-300)
-      date: 2025
-      issuer: Microsoft
-
-    - name: Microsoft Power BI Data Analyst Specialisation
-      date: 2024
-      issuer: Coursera
-
-    - name: Google Cloud Data Analytics Professional Certificate
-      date: 2025
-      issuer: Google
-
-    - name: Google Business Intelligence Certificate
-      date: 2024
-      issuer: Google
-
-    - name: Google Advanced Data Analytics Certificate
-      date: 2025
-      issuer: Google
-
-    - name: Google Data Analytics Professional Certificate
-      date: 2024
-      issuer: Google
-      
     Education:
-
       - institution: Indian Institute of Management
         area: MBA – Marketing & Analytics
-
       - institution: The LNM Institute of Information Technology
         area: B.Tech – Communication & Computer Engineering
