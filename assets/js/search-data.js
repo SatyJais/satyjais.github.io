@@ -51,8 +51,8 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-digital-advertising-data-pipeline-amp-dashboard",
-          title: 'Digital Advertising Data Pipeline &amp;amp; Dashboard',
+            },},{id: "projects-digital-ads-data-pipeline-amp-dashboard",
+          title: 'Digital Ads Data Pipeline &amp;amp; Dashboard',
           description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BQ_Looker_Dashboard/";
