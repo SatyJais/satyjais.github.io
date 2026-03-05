@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Digital Advertising Data Pipeline & Dashboard
+title: Digital Ads Data Pipeline & Dashboard
 description: ETL pipeline and dashboarding for Google & Meta Ads using Google BigQuery(SQL) & Looker Studio
 img: assets/img/BQ_Looker_coverimage.png
 importance: 2
