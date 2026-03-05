@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Keyword-driven influencer discovery (Python)
+title: Keyword-Based Influencer Discovery
 description: keyword-driven influencer discovery application using Python & Streamlit
 img: assets/img/YouTubeCreatorFinder.png
 importance: 1
