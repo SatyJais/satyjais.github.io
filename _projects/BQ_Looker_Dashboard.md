@@ -336,8 +336,8 @@ WHERE
 
 
 
-<div class="row">
-  {% include figure.liquid path="assets/img/ConnectingtoLookerpng" title="Bringing Data to Looker Studio" class="img-fluid d-inline-block w-25" %}
+<div class="text-center">
+  {% include figure.liquid path="assets/img/ConnectingtoLookerpng" title="Bringing Data to Looker Studio" class="img-fluid d-inline-block w-50" %}
 </div>
 <div class="caption">
   Bringing Data to Looker Studio
@@ -360,9 +360,9 @@ WHERE
 To understand the impact of keywords, campaigns, devices, and locations on lead quality and identify any trends.
 
 <div class="text-center">
-  {% include figure.liquid path="assets/img/Joins.png" title="Table joins in Looker" class="img-fluid d-inline-block w-25" %}
+  {% include figure.liquid path="assets/img/Joins.png" title="Table joins in Looker" class="img-fluid d-inline-block w-50" %}
 </div>
 <div class="caption">
-  Scheduled SQL Queries
+  Table joins in Looker
 </div>
 
