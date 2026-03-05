@@ -15,7 +15,7 @@ selected_papers: false
 social: true
 ---
 
-Hi, I'm Satyarth — a data and marketing professional focused on **marketing analytics and analytics engineering**, 
+Hi, I'm Satyarth, a data and marketing professional focused on **marketing analytics and analytics engineering**, 
 building scalable data systems that turn multi-channel campaign data into clear, 
 decision-ready insights. My work bridges performance marketing and data 
 infrastructure — transforming Google Ads, Meta, CRM, and geo data into structured 
