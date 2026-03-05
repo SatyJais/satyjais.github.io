@@ -4,91 +4,130 @@ cv:
   email: jaiswal.satyarth070@gmail.com
   location: Toronto, Canada
   summary: >
-    Data & Business Intelligence Analyst with experience in SaaS, eCommerce, and
-    digital advertising industries. Skilled in designing scalable ETL pipelines,
-    automating dashboards, and delivering actionable insights to drive business
-    decisions. Proficient in SQL, dbt, BigQuery (GCP), Python, Power BI, Tableau,
-    and Looker Studio.
-
+    Data & Business Intelligence Analyst with hands-on experience in SaaS, eCommerce,
+    and advertising industries. Skilled in data modelling, designing scalable ETL pipelines, automating
+    dashboards, and delivering actionable insights to drive business decisions. Proficient
+    in SQL, dbt, BigQuery (GCP), Python, Power BI, Tableau, and Looker Studio. Strong
+    track record of collaborating with cross-functional teams to develop strategic analytics
+    solutions that optimise performance, improve reporting accuracy, and support growth initiatives.
   social_networks:
     - network: LinkedIn
       username: satyarthj
     - network: GitHub
       username: SatyJais
-    - network: Portfolio
-      username: https://satyjais.github.io
-
   sections:
-     Experience:
+    Experience:
       - company: Sciera Inc.
         position: Senior Consultant – Marketing Science
         location: Remote
-        start_date: 2022
-        end_date: Present
+        start_date: 2022-11
+        end_date: present
         highlights:
-          - Built automated marketing dashboards used by enterprise telecom clients.
-          - Designed ETL pipelines integrating CRM and advertising platforms.
-          - Reduced reporting time by automating data ingestion and transformations.
-          - Led analytics initiatives across Google Ads, Meta Ads, and CRM datasets.
-      - company: Aroscop Tech Inc.
-        position: Manager – Marketing Analytics
+          - Designed comprehensive and scalable marketing dashboards for key clients in the US.
+          - Collaborated with campaign execution, creative services, and client teams to address digital advertising challenges through data analysis and reporting.
+          - Ensured data accuracy, integrity, and usability for all in-house and client projects.
+          - Led a team of five to deliver digital campaigns, analytics, and performance insights to US clients.
+          - Designed and executed impact measurement frameworks to conduct brand lift studies for education, CPG, and apparel clients.
+          - Led experimental design (A/B testing) to optimise user engagement and improve KPIs, applying statistical analysis to validate results.
+      - company: Aroscop Tech, Inc.
+        position: Manager – Marketing & Marketing Analytics
         location: India
-        start_date: 2020
-        end_date: 2022
+        start_date: 2020-03
+        end_date: 2022-09
         highlights:
-          - Implemented CRM automation, improving sales conversion tracking.
-          - Built analytics frameworks for campaign performance analysis.
-          - Managed a cross-functional marketing and analytics team.
-
+          - Doubled monthly deal closures by implementing marketing automation and CRM workflows.
+          - Built and managed a team of 4 marketing, data and design professionals.
+          - Led the creation and delivery of 10 market research reports and 3 industry trend analyses.
+          - Planned and executed 2 online conferences to improve brand awareness, helping win 3 of Aroscop's largest clients.
+          - Scaled subscriber base to 10k+ through strategic content initiatives.
+      - company: RazorThink
+        position: Digital Marketing Manager
+        location: India
+        start_date: 2018-02
+        end_date: 2020-01
+        highlights:
+          - Packaged AI products and solutions into marketing-friendly content.
+          - Promoted employee-generated content across YouTube and Medium to boost brand visibility.
+          - Drove lead generation through targeted, industry-specific LinkedIn campaigns.
+          - Partnered with product and presales teams to develop and execute social media and content strategies.
+      - company: MSupply Ecommerce India Pvt Ltd.
+        position: Digital Marketing Analyst
+        location: India
+        start_date: 2015-05
+        end_date: 2018-01
+        highlights:
+          - Liaised with the Catalogue and Category teams to bring the best promotions to digital platforms.
+          - Analysed paid and organic campaigns to inform marketing decisions.
+          - Maintained the organisation's blog to boost organic engagement.
+      - company: FCB Malaysia
+        position: Research Analyst & Associate Consultant
+        location: Malaysia
+        start_date: 2013-06
+        end_date: 2014-12
+        highlights:
+          - Delivered campaign performance reports and client-facing presentations to support account teams.
+          - Used social listening tools to assess audience sentiment and guide campaign improvements.
+          - Analysed usage and attitude studies for a major SEA telecom provider.
     Key Achievements:
-      - name: Reduced Customer Acquisition Cost
+      - name: Lowered Customer Acquisition Cost
         highlights:
-          - Reduced CAC by 70% through data-driven campaign optimisation.
-      - name: Dashboard Automation
+          - Reduced customer acquisition cost by 70% within one year for a major client using data-driven campaign optimisation.
+      - name: Dashboard Automation & Optimisation
         highlights:
-          - Saved 40+ man-hours per month by automating marketing dashboards.
+          - Saved 40 man-hours monthly by creating and automating an interactive dashboard, eliminating all manual errors.
       - name: Sales Cycle Efficiency
         highlights:
-          - Streamlined CRM workflows and doubled monthly deal closures.
-      - name: Subscriber Growth
+          - Streamlined sales cycle, achieving 2x monthly closures by automating sales and marketing activities on CRM.
+      - name: Subscriber Base Growth
         highlights:
-          - Scaled subscriber base to 10K+ decision makers.
-
+          - Scaled subscriber base to 10K+ decision-makers in two years through content-driven marketing.
     Projects:
-      - name: Marketing Data Pipeline with BigQuery, dbt & Looker Studio
+      - name: "Data Modelling, Transformation & Dashboarding with dbt, BigQuery & Looker Studio"
         highlights:
-          - Built an ELT pipeline integrating Google Ads, Meta Ads and CRM data.
-          - Automated transformations using dbt and created real-time dashboards.
-      - name: CRM & Digital Ads Data Integration
+          - Designed an automated marketing analytics pipeline integrating Google Ads, Meta Ads, and CRM data into BigQuery.
+          - Transformed data with dbt and delivered real-time performance dashboards in Looker Studio.
+      - name: ETL Pipeline and Performance Dashboard for Digital Advertising Campaigns
         highlights:
-          - Unified CRM and advertising datasets using SQL and BigQuery.
-
+          - Developed an automated ETL pipeline integrating digital advertising and CRM data.
+          - Enabled real-time performance tracking and efficient campaign optimisation.
+      - name: "CRM & Digital Ads Data Integration using BigQuery, SQL & Looker Studio"
+        highlights:
+          - Unified CRM data with Google and Meta Ads data using multidimensional data modelling.
+          - Revealed in-depth insights on lead quality, keywords, locations, and campaigns.
+    Skills:
+      - label: BI Platforms
+        details: Power BI, Tableau, Looker Studio, Looker
+      - label: Data Analysis
+        details: SQL, Python, R, Excel, Google Sheets, Jupyter Notebook, GA4, DAX, Power Query
+      - label: Cloud Platform
+        details: BigQuery (GCP)
+      - label: Data Transformation
+        details: dbt
     Certificates:
       - name: Agentic AI and AI Agents for Leaders
-        date: 2025
+        date: 2025-09
         issuer: Coursera
       - name: Python for Data Science and AI
-        date: 2025
+        date: 2025-09
         issuer: IBM
       - name: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)"
-        date: 2025
+        date: 2025-04
         issuer: Microsoft
       - name: Microsoft Power BI Data Analyst Specialisation
-        date: 2024
+        date: 2025-04
         issuer: Coursera
       - name: Google Cloud Data Analytics Professional Certificate
-        date: 2025
+        date: 2025-01
         issuer: Google
       - name: Google Business Intelligence Certificate
-        date: 2024
+        date: 2024-07
         issuer: Google
       - name: Google Advanced Data Analytics Certificate
-        date: 2025
+        date: 2024-06
         issuer: Google
       - name: Google Data Analytics Professional Certificate
-        date: 2024
+        date: 2024-02
         issuer: Google
-
     Education:
       - institution: Indian Institute of Management
         area: "MBA – Marketing & Analytics"
