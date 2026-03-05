@@ -71,8 +71,8 @@ ninja.data = [{
           description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO",
           section: "Projects",handler: () => {
               window.location.href = "/projects/PdfProcessingPipeline/";
-            },},{id: "projects-marketing-analytics-pipeline-amp-live-dashboard",
-          title: 'Marketing Analytics Pipeline &amp;amp; Live Dashboard',
+            },},{id: "projects-marketing-analytics-pipeline",
+          title: 'Marketing Analytics Pipeline',
           description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads &amp; CRM data via BigQuery, dbt &amp; Looker Studio",
           section: "Projects",handler: () => {
               window.location.href = "/projects/digital_Ads_performance_Dashboard/";
