@@ -51,11 +51,6 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-ocr-amp-ai-powered-care-note-processing-pipeline",
-          title: 'OCR &amp;amp; AI-Powered Care Note Processing Pipeline',
-          description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
             },},{id: "projects-digital-advertising-data-pipeline-amp-dashboard",
           title: 'Digital Advertising Data Pipeline &amp;amp; Dashboard',
           description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
@@ -71,6 +66,11 @@ ninja.data = [{
           description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Keyword_driven_influencer_discovery/";
+            },},{id: "projects-ocr-amp-ai-powered-care-note-processing-pipeline",
+          title: 'OCR &amp;amp; AI-Powered Care Note Processing Pipeline',
+          description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/PdfProcessingPipeline/";
             },},{id: "projects-marketing-analytics-pipeline-amp-live-dashboard",
           title: 'Marketing Analytics Pipeline &amp;amp; Live Dashboard',
           description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads &amp; CRM data via BigQuery, dbt &amp; Looker Studio",
