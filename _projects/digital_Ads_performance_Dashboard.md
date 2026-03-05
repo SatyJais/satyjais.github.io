@@ -279,7 +279,7 @@ select * from geo_mapped
 Built a real-time Looker Studio dashboard connected directly to BigQuery mart tables, shared with the internal team, client marketing, and client leadership.
 
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/Seniorly_Dashboard1.png" title="Overview — Total Leads, DOs, Active Tours, Wins, CPL and spend trends across Google & Meta" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
