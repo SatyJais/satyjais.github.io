@@ -5,7 +5,7 @@ permalink: /projects/
 description: Automating Intelligence Across Marketing & Product
 nav: true
 nav_order: 3
-display_categories: [Work, Vibecoding]
+display_categories: [Work, AI & Automation]
 horizontal: false
 ---
 
