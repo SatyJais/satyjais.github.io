@@ -276,24 +276,18 @@ select * from geo_mapped
 
 ### 3. Live Dashboard — Looker Studio
 
-Built a real-time Looker Studio dashboard connected directly to BigQuery mart tables, shared with internal team, client marketing, and client leadership.
+Built a real-time Looker Studio dashboard connected directly to BigQuery mart tables, shared with the internal team, client marketing, and client leadership.
 
-<div class="row mt-4 mb-2">
-  <div class="col-12">
-    {% include figure.liquid loading="eager" path="assets/img/Seniorly_Dashboard1.png" class="img-fluid rounded z-depth-2" caption="Overview — Total Leads, DOs, Active Tours, Wins, CPL and spend trends across Google & Meta" %}
-  </div>
-</div>
-
-<div class="row mt-3 mb-2">
-  <div class="col-12">
-    {% include figure.liquid loading="eager" path="assets/img/Seniorly_Dashboard2.png" class="img-fluid rounded z-depth-2" caption="Channel Comparison — CPL, CPDO, CPAT and Cost Per Win split across Google Ads vs Meta Ads, with weekly breakdown table" %}
-  </div>
-</div>
-
-<div class="row mt-3 mb-4">
-  <div class="col-12">
-    {% include figure.liquid loading="eager" path="assets/img/Seniorly_Dashboard3.png" class="img-fluid rounded z-depth-2" caption="Google Ads deep-dive — Leads, DOs and ATs by keyword, campaign type and device" %}
-  </div>
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Seniorly_Dashboard1.png" title="Overview — Total Leads, DOs, Active Tours, Wins, CPL and spend trends across Google & Meta" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Seniorly_Dashboard2.png" title="Channel Comparison — CPL, CPDO, CPAT and Cost Per Win split across Google Ads vs Meta Ads, with weekly breakdown table" class="img-fluid rounded z-depth-1" %}
+    </div>
+     <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Seniorly_Dashboard3.png" title="Google Ads deep-dive — Leads, DOs and ATs by keyword, campaign type and device" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 
 The dashboard provided campaign direction across four key dimensions:
@@ -301,9 +295,9 @@ The dashboard provided campaign direction across four key dimensions:
 | Dimension | Insight Delivered |
 |---|---|
 | **GEO** | Performance by city — which markets drive leads vs spend |
-| **Device Type** | Mobile vs desktop split: Desktop CPL $113 vs Mobile $90 |
-| **Campaign Type** | Search Ads drove 61% of leads; PMax drove 38% |
-| **Channel** | Google CPL $99 vs Meta CPL $35 — informing budget allocation |
+| **Device Type** | Mobile vs desktop split |
+| **Campaign Type** | Performance by Campaign Type - Search Vs PMAX Vs Display |
+| **Channel** | Informing budget allocation |
 
 ---
 
