@@ -336,8 +336,8 @@ WHERE
 
 
 
-<div class="text-center">
-  {% include figure.liquid path="assets/img/ConnectingtoLooker.png.png" title="Data discrepancy" class="img-fluid d-inline-block w-25" %}
+<div class="row">
+  {% include figure.liquid path="assets/img/ConnectingtoLookerpng" title="Bringing Data to Looker Studio" class="img-fluid d-inline-block w-25" %}
 </div>
 <div class="caption">
   Bringing Data to Looker Studio
