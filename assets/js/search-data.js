@@ -56,8 +56,8 @@ ninja.data = [{
           description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BQ_Looker_Dashboard/";
-            },},{id: "projects-bigquery-sql-amp-gsheets-data-ingestion-to-live-dashboard",
-          title: 'BigQuery (SQL) &amp;amp; GSheets — Data Ingestion to Live Dashboard',
+            },},{id: "projects-live-dashboardbigquery-amp-sheets-live-dashboard",
+          title: 'Live DashboardBigQuery &amp;amp; Sheets Live Dashboard',
           description: "Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
