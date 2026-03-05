@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Marketing Analytics Pipeline & Live Dashboard"
+title: Marketing Analytics Pipeline
 description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads & CRM data via BigQuery, dbt & Looker Studio"
 img: assets/img/ELT_ads_data_pipeline_architecture.png
 importance: 1
