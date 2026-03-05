@@ -84,14 +84,12 @@ cv:
           - BigQuery
           - dbt
           - ETL Pipelines
-
       - name: Business Intelligence
         keywords:
           - Power BI
           - Tableau
           - Looker Studio
           - Data Visualization
-
       - name: Marketing Analytics
         keywords:
           - Google Ads
