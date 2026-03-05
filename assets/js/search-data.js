@@ -51,9 +51,9 @@ ninja.data = [{
           description: "a project with no image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-ocr-amp-ai-powered-care-note-processing-pipeline",
+          title: 'OCR &amp;amp; AI-Powered Care Note Processing Pipeline',
+          description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-digital-advertising-data-pipeline-amp-dashboard",
