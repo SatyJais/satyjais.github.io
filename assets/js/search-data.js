@@ -76,9 +76,9 @@ ninja.data = [{
           description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Keyword_driven_influencer_discovery/";
-            },},{id: "projects-ads-amp-crm-data-pipeline",
-          title: 'Ads &amp;amp; CRM Data Pipeline',
-          description: "ELT pipeline unifying Google Ads, Meta Ads &amp; CRM data in BigQuery with dbt transforms and Looker Studio dashboards",
+            },},{id: "projects-marketing-analytics-pipeline-amp-live-dashboard",
+          title: 'Marketing Analytics Pipeline &amp;amp; Live Dashboard',
+          description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads &amp; CRM data via BigQuery, dbt &amp; Looker Studio",
           section: "Projects",handler: () => {
               window.location.href = "/projects/digital_Ads_performance_Dashboard/";
             },},{id: "teachings-data-science-fundamentals",
