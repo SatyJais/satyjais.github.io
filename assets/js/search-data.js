@@ -61,8 +61,8 @@ ninja.data = [{
           description: "Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
-            },},{id: "projects-keyword-driven-influencer-discovery-python",
-          title: 'Keyword-driven influencer discovery (Python)',
+            },},{id: "projects-keyword-based-influencer-discovery",
+          title: 'Keyword-Based Influencer Discovery',
           description: "keyword-driven influencer discovery application using Python &amp; Streamlit",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Keyword_driven_influencer_discovery/";
