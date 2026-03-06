@@ -204,7 +204,7 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
     <div style="font-size:0.78rem; font-weight:700; letter-spacing:0.08em; color:#94a3b8; margin-bottom:0.6rem;">DATA WAREHOUSE & TRANSFORMATION</div>
     <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
       <span style="display:inline-flex; align-items:center; gap:6px; background:#EFF6FF; color:#1d4ed8; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">🔷 BigQuery</span>
-      <span style="display:inline-flex; align-items:center; gap:6px; background:#FFF4F1; color:#9a3412; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">🔶 dbt Core</span>
+      <span style="display:inline-flex; align-items:center; gap:6px; background:#FFF4F1; color:#9a3412; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">🔶 dbt Cloud</span>
       <span style="display:inline-flex; align-items:center; gap:6px; background:#f8fafc; color:#334155; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">📋 SQL</span>
       <span style="display:inline-flex; align-items:center; gap:6px; background:#f8fafc; color:#334155; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">🐍 Python</span>
     </div>
@@ -234,7 +234,7 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
     <div style="font-size:0.78rem; font-weight:700; letter-spacing:0.08em; color:#94a3b8; margin-bottom:0.6rem;">AI & AUTOMATION</div>
     <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
       <span style="display:inline-flex; align-items:center; gap:6px; background:#f5f3ff; color:#5b21b6; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">✨ GPT-4o / OpenAI</span>
-      <span style="display:inline-flex; align-items:center; gap:6px; background:#f5f3ff; color:#5b21b6; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">👁 Tesseract OCR</span>
+      <span style="display:inline-flex; align-items:center; gap:6px; background:#f5f3ff; color:#5b21b6; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">🎈 Streamlit</span>
       <span style="display:inline-flex; align-items:center; gap:6px; background:#f8fafc; color:#334155; border-radius:8px; padding:6px 12px; font-size:0.85rem; font-weight:500;">⚙️ Scheduled Queries</span>
     </div>
   </div>
