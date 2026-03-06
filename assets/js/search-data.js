@@ -73,7 +73,7 @@ ninja.data = [{
               window.location.href = "/projects/PdfProcessingPipeline/";
             },},{id: "projects-marketing-analytics-pipeline",
           title: 'Marketing Analytics Pipeline',
-          description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google &amp; Meta Ads data pipeline, transformed with dbt, into BigQuery with a live Looker Studio dashboard.",
+          description: "Saved ~50 hrs/month and replaced manual reporting with a real-time Looker Studio dashboard — tracking 20+ campaigns across 20 US cities via a BigQuery + dbt ELT pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/digital_Ads_performance_Dashboard/";
             },},{id: "teachings-data-science-fundamentals",
