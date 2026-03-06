@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Marketing Analytics Pipeline
-description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads & CRM data via BigQuery, dbt & Looker Studio"
+description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google & Meta Ads data pipeline, transformed with dbt, into BigQuery with a live Looker Studio dashboard."
 img: assets/img/ELT_ads_data_pipeline_architecture.png
 importance: 1
 category: Work
