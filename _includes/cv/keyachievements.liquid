@@ -1,0 +1,14 @@
+{% if site.data.cv.sections.Key Achievements %}
+  {% for item in site.data.cv.sections["Key Achievements"] %}
+    <div class="card mt-3 p-3">
+      <h5 class="font-weight-bold">{{ item.name }}</h5>
+      {% if item.highlights %}
+        <ul>
+          {% for highlight in item.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endif %}
