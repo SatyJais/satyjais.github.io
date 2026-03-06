@@ -58,7 +58,7 @@ ninja.data = [{
               window.location.href = "/projects/BQ_Looker_Dashboard/";
             },},{id: "projects-bigquery-amp-sheets-live-dashboard",
           title: 'BigQuery &amp;amp; Sheets Live Dashboard',
-          description: "Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.",
+          description: "Replaced weekly manual reports with a live Google Sheets dashboard — automated CRM ingestion via SQL and Google Ads sync via Coefficient, giving the team real-time campaign direction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Data_Cleaning_ETL_BigQuery_GSheets/";
             },},{id: "projects-keyword-based-influencer-discovery",
