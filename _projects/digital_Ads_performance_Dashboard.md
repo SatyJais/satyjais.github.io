@@ -15,6 +15,48 @@ The client was running **20+ digital advertising campaigns across 20 cities in t
 
 ---
 
+## My Role
+
+I was the sole data engineer and account lead on this project, responsible for:
+
+- **Architecture** — designing the full ELT pipeline from scratch
+- **Data modelling** — building and maintaining all dbt models in the DAG
+- **Dashboard design** — structuring KPIs and views for different audience types
+- **Stakeholder management** — translating data insights into campaign decisions for the client team
+- **Ongoing maintenance** — ensuring data freshness, integrity, and pipeline reliability
+
+---
+
+## Results
+
+<div class="row mt-3">
+  <div class="col-md-3 col-sm-6 mb-3">
+    <div class="card h-100 text-center p-3" style="border-left: 4px solid #4285F4;">
+      <h2 style="color:#4285F4; font-size:2rem; font-weight:700;">~50 hrs</h2>
+      <p style="font-size:0.9rem; color:#64748b;">saved per month by eliminating manual reporting</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 mb-3">
+    <div class="card h-100 text-center p-3" style="border-left: 4px solid #34a853;">
+      <h2 style="color:#34a853; font-size:2rem; font-weight:700;">Real-time</h2>
+      <p style="font-size:0.9rem; color:#64748b;">dashboard replacing static weekly reports</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 mb-3">
+    <div class="card h-100 text-center p-3" style="border-left: 4px solid #FF694A;">
+      <h2 style="color:#FF694A; font-size:2rem; font-weight:700;">20+ campaigns</h2>
+      <p style="font-size:0.9rem; color:#64748b;">tracked across Google & Meta simultaneously</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 mb-3">
+    <div class="card h-100 text-center p-3" style="border-left: 4px solid #0d9488;">
+      <h2 style="color:#0d9488; font-size:2rem; font-weight:700;">20 cities</h2>
+      <p style="font-size:0.9rem; color:#64748b;">of US market coverage with geo-level insights</p>
+    </div>
+  </div>
+</div>
+---
+
 ## The Problem
 
 The marketing team faced three compounding challenges:
@@ -299,48 +341,7 @@ The dashboard provided campaign direction across four key dimensions:
 | **Campaign Type** | Performance by Campaign Type - Search Vs PMAX Vs Display |
 | **Channel** | Informing budget allocation |
 
----
 
-## Results
-
-<div class="row mt-3">
-  <div class="col-md-3 col-sm-6 mb-3">
-    <div class="card h-100 text-center p-3" style="border-left: 4px solid #4285F4;">
-      <h2 style="color:#4285F4; font-size:2rem; font-weight:700;">~50 hrs</h2>
-      <p style="font-size:0.9rem; color:#64748b;">saved per month by eliminating manual reporting</p>
-    </div>
-  </div>
-  <div class="col-md-3 col-sm-6 mb-3">
-    <div class="card h-100 text-center p-3" style="border-left: 4px solid #34a853;">
-      <h2 style="color:#34a853; font-size:2rem; font-weight:700;">Real-time</h2>
-      <p style="font-size:0.9rem; color:#64748b;">dashboard replacing static weekly reports</p>
-    </div>
-  </div>
-  <div class="col-md-3 col-sm-6 mb-3">
-    <div class="card h-100 text-center p-3" style="border-left: 4px solid #FF694A;">
-      <h2 style="color:#FF694A; font-size:2rem; font-weight:700;">20+ campaigns</h2>
-      <p style="font-size:0.9rem; color:#64748b;">tracked across Google & Meta simultaneously</p>
-    </div>
-  </div>
-  <div class="col-md-3 col-sm-6 mb-3">
-    <div class="card h-100 text-center p-3" style="border-left: 4px solid #0d9488;">
-      <h2 style="color:#0d9488; font-size:2rem; font-weight:700;">20 cities</h2>
-      <p style="font-size:0.9rem; color:#64748b;">of US market coverage with geo-level insights</p>
-    </div>
-  </div>
-</div>
-
----
-
-## My Role
-
-I was the sole data engineer and account lead on this project, responsible for:
-
-- **Architecture** — designing the full ELT pipeline from scratch
-- **Data modelling** — building and maintaining all dbt models in the DAG
-- **Dashboard design** — structuring KPIs and views for different audience types
-- **Stakeholder management** — translating data insights into campaign decisions for the client team
-- **Ongoing maintenance** — ensuring data freshness, integrity, and pipeline reliability
 
 ---
 
