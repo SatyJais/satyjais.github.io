@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Marketing Analytics Pipeline
-description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google & Meta Ads data pipeline, transformed with dbt, into BigQuery with a live Looker Studio dashboard."
+description: "Saved ~50 hrs/month and replaced manual reporting with a real-time Looker Studio dashboard — tracking 20+ campaigns across 20 US cities via a BigQuery + dbt ELT pipeline."
 img: assets/img/ELT_ads_data_pipeline_architecture.png
 importance: 1
 category: Work
