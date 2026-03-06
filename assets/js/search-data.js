@@ -73,7 +73,7 @@ ninja.data = [{
               window.location.href = "/projects/PdfProcessingPipeline/";
             },},{id: "projects-marketing-analytics-pipeline",
           title: 'Marketing Analytics Pipeline',
-          description: "End-to-end ELT pipeline and real-time dashboard for a US Senior Living Marketplace — integrating Google Ads, Meta Ads &amp; CRM data via BigQuery, dbt &amp; Looker Studio",
+          description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google &amp; Meta Ads data pipeline, transformed with dbt, into BigQuery with a live Looker Studio dashboard.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/digital_Ads_performance_Dashboard/";
             },},{id: "teachings-data-science-fundamentals",
