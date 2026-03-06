@@ -1,34 +1,27 @@
----
 layout: about
 title: About
 permalink: /
-subtitle: Data Analyst & Analytics Engineer · BigQuery · dbt · Looker Studio · SQL · BI
-
+subtitle: Analytics Engineer · Data Analyst · Marketing Data Analyst
 
 profile:
   align: right
   image: SATYARTH2.jpeg
   image_circular: true
+  more_info:
 
 news: false
 selected_papers: false
 social: true
 ---
 
-Hi, I'm Satyarth, a data and marketing professional focused on **marketing analytics and analytics engineering**, 
-building scalable data systems that turn multi-channel campaign data into clear, 
-decision-ready insights. My work bridges performance marketing and data 
-infrastructure — transforming Google Ads, Meta, CRM, and geo data into structured 
-models using **BigQuery, dbt, SQL, and BI tools**.
+I build automated data systems that turn messy multi-channel marketing data into clear, decision-ready insights — saving teams **40+ hours a month**, eliminating manual reporting, and power reporting for marketing campaigns managing over $250K in monthly media spend.
 
-I design automated **ETL/ELT pipelines**, develop clean transformation layers, create robust data models and build dashboards that translate KPIs into actionable strategies. My approach is systems-driven: define the right metrics, validate data integrity, model efficiently, build scalable systems,  segment meaningfully, and communicate insights that influence growth.
+With **10+ years** across marketing and analytics, I specialise in **BigQuery, dbt, SQL, and Looker Studio** — designing ETL/ELT pipelines, data models, and dashboards that connect ad spend directly to business outcomes like leads, pipeline, and revenue.
 
-I specialise in **Google Cloud (BigQuery), dbt transformations, SQL, Data Modelling
-and Looker & Looker Studio dashboards** — with a strong focus on marketing 
-analytics and campaign attribution.
+Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data Analyst** roles where data directly drives growth strategy and business performance. Based in Toronto, Canada — open to remote.
 
-I am particularly interested in roles where analytics directly impacts business performance, growth strategy, and operational efficiency.
-
+<a href="mailto:jaiswal.satyarth070@gmail.com" style="display:inline-block; margin-top:0.6rem; margin-right:0.5rem; font-size:0.9rem; font-weight:600; background:#2c3e50; color:white; border-radius:6px; padding:7px 16px; text-decoration:none;">✉️ Get in touch</a>
+<a href="https://ca.linkedin.com/in/satyarthj" target="_blank" style="display:inline-block; margin-top:0.6rem; font-size:0.9rem; font-weight:600; border:1.5px solid #2c3e50; border-radius:6px; padding:7px 16px; text-decoration:none;">LinkedIn →</a>
 
 <div class="social" style="margin-top: 1rem;">
   <a href="/assets/pdf/Satyarth Jaiswal_Resume_DataAnalyst_BI.pdf" target="_blank"
