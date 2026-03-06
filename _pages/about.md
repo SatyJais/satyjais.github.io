@@ -75,7 +75,7 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
 
 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.2rem; margin:1.5rem 0;">
 
-  <a href="/projects/seniorly-pipeline/" style="text-decoration:none; color:inherit;">
+  <a href="/projects/digital_Ads_performance_Dashboard/" style="text-decoration:none; color:inherit;">
     <div style="border:1.5px solid #e2e8f0; border-radius:10px; overflow:hidden; transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
       <div style="background:linear-gradient(135deg, #1a73e8, #FF694A); height:6px;"></div>
       <div style="padding:1.2rem;">
@@ -91,7 +91,7 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
     </div>
   </a>
 
-  <a href="/projects/digital-ads-pipeline/" style="text-decoration:none; color:inherit;">
+  <a href="/projects/BQ_Looker_Dashboard/" style="text-decoration:none; color:inherit;">
     <div style="border:1.5px solid #e2e8f0; border-radius:10px; overflow:hidden; transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
       <div style="background:linear-gradient(135deg, #4285F4, #34a853); height:6px;"></div>
       <div style="padding:1.2rem;">
@@ -107,7 +107,7 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
     </div>
   </a>
 
-  <a href="/projects/ocr-pipeline/" style="text-decoration:none; color:inherit;">
+  <a href="/projects/PdfProcessingPipeline/" style="text-decoration:none; color:inherit;">
     <div style="border:1.5px solid #e2e8f0; border-radius:10px; overflow:hidden; transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
       <div style="background:linear-gradient(135deg, #7c3aed, #1d4ed8); height:6px;"></div>
       <div style="padding:1.2rem;">
@@ -133,38 +133,65 @@ Currently open to **Analytics Engineer**, **Data Analyst**, and **Marketing Data
 
 ## How I Work
 
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; margin:1.5rem 0;">
+<div style="overflow-x:auto; margin:1.5rem 0;">
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" style="width:100%; min-width:600px; font-family:inherit;">
 
-  <div style="text-align:center; padding:1.2rem 0.8rem;">
-    <div style="width:48px; height:48px; background:#EFF6FF; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; font-size:1.4rem; line-height:48px;">1️⃣</div>
-    <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem;">Define the Question</div>
-    <div style="font-size:0.82rem; color:#64748b; line-height:1.5;">Start with the business decision — not the data. What needs to change, and what metric proves it?</div>
-  </div>
+  <!-- Connecting line -->
+  <line x1="80" y1="52" x2="820" y2="52" stroke="#e2e8f0" stroke-width="2"/>
 
-  <div style="text-align:center; padding:1.2rem 0.8rem;">
-    <div style="width:48px; height:48px; background:#FFF4F1; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; font-size:1.4rem; line-height:48px;">2️⃣</div>
-    <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem;">Model the Data</div>
-    <div style="font-size:0.82rem; color:#64748b; line-height:1.5;">Build clean, tested, reusable data models. Staging → Intermediate → Mart. No shortcuts.</div>
-  </div>
+  <!-- Step 1 -->
+  <circle cx="80" cy="52" r="28" fill="#EFF6FF" stroke="#1a73e8" stroke-width="2"/>
+  <text x="80" y="57" text-anchor="middle" font-size="16">1️⃣</text>
+  <text x="80" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Define the</text>
+  <text x="80" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Question</text>
+  <text x="80" y="130" text-anchor="middle" font-size="9.5" fill="#64748b">Business first,</text>
+  <text x="80" y="143" text-anchor="middle" font-size="9.5" fill="#64748b">data second</text>
 
-  <div style="text-align:center; padding:1.2rem 0.8rem;">
-    <div style="width:48px; height:48px; background:#f0fdf4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; font-size:1.4rem; line-height:48px;">3️⃣</div>
-    <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem;">Automate Everything</div>
-    <div style="font-size:0.82rem; color:#64748b; line-height:1.5;">Scheduled queries, incremental loads, pipeline orchestration. If it runs manually, it will break eventually.</div>
-  </div>
+  <!-- Arrow -->
+  <polygon points="148,48 158,52 148,56" fill="#94a3b8"/>
 
-  <div style="text-align:center; padding:1.2rem 0.8rem;">
-    <div style="width:48px; height:48px; background:#f5f3ff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; font-size:1.4rem; line-height:48px;">4️⃣</div>
-    <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem;">Surface the Insight</div>
-    <div style="font-size:0.82rem; color:#64748b; line-height:1.5;">Dashboards designed for the audience — different views for analysts, marketers, and leadership.</div>
-  </div>
+  <!-- Step 2 -->
+  <circle cx="260" cy="52" r="28" fill="#FFF4F1" stroke="#FF694A" stroke-width="2"/>
+  <text x="260" y="57" text-anchor="middle" font-size="16">2️⃣</text>
+  <text x="260" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Model the</text>
+  <text x="260" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Data</text>
+  <text x="260" y="130" text-anchor="middle" font-size="9.5" fill="#64748b">Staging →</text>
+  <text x="260" y="143" text-anchor="middle" font-size="9.5" fill="#64748b">Mart layers</text>
 
-  <div style="text-align:center; padding:1.2rem 0.8rem;">
-    <div style="width:48px; height:48px; background:#fefce8; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; font-size:1.4rem; line-height:48px;">5️⃣</div>
-    <div style="font-weight:700; font-size:0.9rem; margin-bottom:0.3rem;">Drive the Decision</div>
-    <div style="font-size:0.82rem; color:#64748b; line-height:1.5;">Translate findings into clear recommendations. Data is only useful when it changes what happens next.</div>
-  </div>
+  <!-- Arrow -->
+  <polygon points="328,48 338,52 328,56" fill="#94a3b8"/>
 
+  <!-- Step 3 -->
+  <circle cx="440" cy="52" r="28" fill="#f0fdf4" stroke="#34a853" stroke-width="2"/>
+  <text x="440" y="57" text-anchor="middle" font-size="16">3️⃣</text>
+  <text x="440" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Automate</text>
+  <text x="440" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Everything</text>
+  <text x="440" y="130" text-anchor="middle" font-size="9.5" fill="#64748b">Scheduled,</text>
+  <text x="440" y="143" text-anchor="middle" font-size="9.5" fill="#64748b">incremental</text>
+
+  <!-- Arrow -->
+  <polygon points="508,48 518,52 508,56" fill="#94a3b8"/>
+
+  <!-- Step 4 -->
+  <circle cx="620" cy="52" r="28" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="620" y="57" text-anchor="middle" font-size="16">4️⃣</text>
+  <text x="620" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Surface the</text>
+  <text x="620" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Insight</text>
+  <text x="620" y="130" text-anchor="middle" font-size="9.5" fill="#64748b">Dashboards for</text>
+  <text x="620" y="143" text-anchor="middle" font-size="9.5" fill="#64748b">every audience</text>
+
+  <!-- Arrow -->
+  <polygon points="688,48 698,52 688,56" fill="#94a3b8"/>
+
+  <!-- Step 5 -->
+  <circle cx="820" cy="52" r="28" fill="#fefce8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="820" y="57" text-anchor="middle" font-size="16">5️⃣</text>
+  <text x="820" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Drive the</text>
+  <text x="820" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#1e293b">Decision</text>
+  <text x="820" y="130" text-anchor="middle" font-size="9.5" fill="#64748b">Data changes</text>
+  <text x="820" y="143" text-anchor="middle" font-size="9.5" fill="#64748b">what happens next</text>
+
+</svg>
 </div>
 
 ---
