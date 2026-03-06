@@ -1,6 +1,6 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 
-cv_pdf: /assets/pdf/Satyarth Jaiswal_Resume_DataAnalyst_BI.pdf # path to your CV PDF file
+#cv_pdf: /assets/pdf/Satyarth Jaiswal_Resume_DataAnalyst_BI.pdf # path to your CV PDF file
 email: jaiswal.satyarth070@gmail.com# your email address
 linkedin_username: satyarthj
