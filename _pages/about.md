@@ -12,7 +12,7 @@ profile:
 
 news: false
 selected_papers: false
-social: true
+social: false
 ---
 
 I build automated data systems that turn messy multi-channel marketing data into clear, decision-ready insights — saving teams **40+ hours a month**, eliminating manual reporting, and power reporting for marketing campaigns managing over $250K in monthly media spend.
