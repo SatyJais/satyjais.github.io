@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BigQuery & Sheets Live Dashboard
-description: Streamlined campaign reporting workflow to improve accuracy, reduce manual effort, and enable faster decisions.
+description: "Replaced weekly manual reports with a live Google Sheets dashboard — automated CRM ingestion via SQL and Google Ads sync via Coefficient, giving the team real-time campaign direction"
 img: assets/img/Project2_cover_image2.png
 importance: 3
 category: Work
