@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "OCR & AI-Powered Note Processing Pipeline"
-description: "Automated pipeline to extract, rephrase, and reformat 20,000+ pages of handwritten care notes using Tesseract OCR, GPT-4o, and Python — built in 3 days for a US NGO"
+description: "Processed 20,000+ pages of handwritten care notes in minutes — automated extraction, GPT-4o (API) rephrasing, and PDF generation pipeline built in 3 days for a US NGO."
 img: assets/img/ocr-pipeline.png
 importance: 2
 category: AI & Automation
