@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Digital Ads Data Pipeline & Dashboard
-description: ETL pipeline and dashboarding for Google & Meta Ads using Google BigQuery(SQL) & Looker Studio
+description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google & Meta Ads data pipeline into BigQuery with a live Looker Studio dashboard."
 img: assets/img/BQ_Looker_coverimage.png
 importance: 2
 category: Work
