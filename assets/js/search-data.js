@@ -53,7 +53,7 @@ ninja.data = [{
               window.location.href = "/projects/6_project/";
             },},{id: "projects-digital-ads-data-pipeline-amp-dashboard",
           title: 'Digital Ads Data Pipeline &amp;amp; Dashboard',
-          description: "ETL pipeline and dashboarding for Google &amp; Meta Ads using Google BigQuery(SQL) &amp; Looker Studio",
+          description: "Saved ~40 hrs/month and eliminated manual reporting for a US senior living client — automated Google &amp; Meta Ads data pipeline into BigQuery with a live Looker Studio dashboard.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/BQ_Looker_Dashboard/";
             },},{id: "projects-bigquery-amp-sheets-live-dashboard",
