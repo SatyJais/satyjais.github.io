@@ -28,3 +28,11 @@ and Looker & Looker Studio dashboards** — with a strong focus on marketing
 analytics and campaign attribution.
 
 I am particularly interested in roles where analytics directly impacts business performance, growth strategy, and operational efficiency.
+
+
+<div class="social" style="margin-top: 1rem;">
+  <a href="/assets/pdf/Satyarth Jaiswal_Resume_DataAnalyst_BI.pdf" target="_blank"
+     style="font-size:0.95rem; font-weight:600; border:1.5px solid #555; border-radius:6px; padding:5px 14px; text-decoration:none; margin-right:8px;">
+    📄 Resume
+  </a>
+</div>
